@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "title": "Groupe V2A — Strategic Investment Advisory & Intermediation",
+    "description": "Groupe V2A supports institutional and private investors in their strategic projects: real estate, hospitality, renewable energy, fundraising and diversified assets."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "legalNotice": "Legal Notice",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "header": {
+    "cta": "Contact"
+  },
+  "hero": {
+    "title": "Vision to Action",
+    "subtitle": "Connecting Capital, Creating Impact",
+    "cta": "Discover our expertise"
+  },
+  "valueProps": {
+    "sectionTitle": "Our value proposition",
+    "items": {
+      "experience": {
+        "title": "50+ years of experience",
+        "description": "Over half a century of cumulative expertise in strategic investment advisory."
+      },
+      "global": {
+        "title": "5 continents",
+        "description": "An international network covering all major global strategic markets."
+      },
+      "fullService": {
+        "title": "From concept to delivery",
+        "description": "End-to-end support at every stage of your investment project."
+      },
+      "tailored": {
+        "title": "Tailored guidance",
+        "description": "Customized solutions adapted to each investor's objectives and requirements."
+      }
+    }
+  },
+  "expertise": {
+    "sectionTitle": "Our areas of expertise",
+    "viewAll": "Discover all our services",
+    "sectors": {
+      "hospitality": {
+        "title": "Hospitality & Tourism",
+        "description": "Design and delivery of exceptional hospitality projects."
+      },
+      "realEstate": {
+        "title": "Real Estate Development",
+        "description": "Design and delivery of high-value real estate programs."
+      },
+      "energy": {
+        "title": "Renewable Energy",
+        "description": "Research and support for sustainable energy projects."
+      },
+      "fundraising": {
+        "title": "Fundraising",
+        "description": "Research and support for your financing needs."
+      },
+      "assets": {
+        "title": "Diversified Assets",
+        "description": "Research and support for strategic asset diversification."
+      }
+    }
+  },
+  "keyFigures": {
+    "sectionTitle": "Key figures",
+    "experience": "Years of cumulative experience",
+    "continents": "Continents covered",
+    "projects": "Projects supported",
+    "partners": "Strategic partners"
+  },
+  "ctaBand": {
+    "title": "Ready to bring your vision to life?",
+    "description": "Contact us to discuss your investment project.",
+    "cta": "Contact us"
+  },
+  "about": {
+    "metadata": {
+      "title": "About — Groupe V2A",
+      "description": "Discover the vision, mission and leadership team of Groupe V2A, a strategic investment advisory firm."
+    },
+    "vision": {
+      "sectionTitle": "Our vision",
+      "text": "Groupe V2A positions itself as a key player in the transactional value chain, connecting investors with the most relevant opportunities through a rigorous and selective approach.",
+      "mission": "Our mission is to create lasting value by identifying, structuring and supporting high-potential investment projects, while ensuring perfect alignment between the interests of all stakeholders."
+    },
+    "team": {
+      "sectionTitle": "Leadership team",
+      "members": {
+        "valere": {
+          "name": "Valère Duchenne",
+          "title": "Co-founder & CEO",
+          "expertise": "Expertise in financial structuring and international real estate and hospitality project development."
+        },
+        "andrew": {
+          "name": "Andrew Duchenne",
+          "title": "Co-founder & COO",
+          "expertise": "Specialist in operational management and large-scale project deployment in emerging markets."
+        },
+        "angelo": {
+          "name": "Angelo Rapazzini",
+          "title": "Co-founder & Chief Strategy Officer",
+          "expertise": "Expert in investment strategy and financial intermediation on international markets."
+        }
+      }
+    },
+    "values": {
+      "sectionTitle": "Our values",
+      "selectivity": {
+        "title": "Selectivity",
+        "description": "We only retain projects that meet our rigorous quality and profitability criteria."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear and honest communication at every stage of the investment process."
+      },
+      "alignment": {
+        "title": "Interest alignment",
+        "description": "Our recommendations are guided by the common interest of all stakeholders."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "Protecting sensitive information is at the heart of our professional commitment."
+      }
+    }
+  },
+  "services": {
+    "metadata": {
+      "title": "Services — Groupe V2A",
+      "description": "Discover Groupe V2A's expertise: hospitality, real estate, renewable energy, fundraising and diversified assets."
+    },
+    "pageTitle": "Our expertise",
+    "pageSubtitle": "Comprehensive support for your strategic investment projects",
+    "sectors": {
+      "hospitality": {
+        "title": "Hospitality & Tourism Accommodation",
+        "type": "Design and delivery",
+        "description": "Groupe V2A designs and delivers exceptional hospitality projects, from architectural design to operational delivery. Our expertise covers all types of accommodation: luxury hotels, resorts, tourism residences and innovative hospitality concepts.",
+        "highlights": ["Feasibility and market studies", "Architectural design and interior design", "Project management and site supervision", "Commissioning and hotel management"]
+      },
+      "realEstate": {
+        "title": "Real Estate Development",
+        "type": "Design and delivery",
+        "description": "We develop high-value real estate programs, residential and commercial, in the most promising markets. Our integrated approach ensures control at every stage, from land identification to marketing.",
+        "highlights": ["Land prospecting and acquisition", "Legal and financial structuring", "Construction management", "Marketing strategy"]
+      },
+      "energy": {
+        "title": "Renewable Energy",
+        "type": "Research and support",
+        "description": "Groupe V2A identifies and supports investors in renewable energy projects: solar, wind, biomass and hydrogen. We structure opportunities and facilitate connections between project developers and qualified investors.",
+        "highlights": ["High-potential project identification", "Technical and financial due diligence", "Investment structuring", "Investor-developer matchmaking"]
+      },
+      "fundraising": {
+        "title": "Fundraising",
+        "type": "Research and support",
+        "description": "We support companies and project developers in their fundraising, identifying the most relevant investors and structuring operations to maximize success.",
+        "highlights": ["Investment dossier preparation", "Investor identification and qualification", "Financial structuring", "Negotiation support"]
+      },
+      "assets": {
+        "title": "Diversified Assets",
+        "type": "Research and support",
+        "description": "Groupe V2A advises clients on diversifying their investment portfolios, identifying strategic high-potential assets: commodities, alternative assets and market opportunities.",
+        "highlights": ["Market analysis and strategic monitoring", "High-yield asset identification", "Complex operation structuring", "Decision-making support"]
+      }
+    },
+    "process": {
+      "sectionTitle": "End-to-End Support",
+      "subtitle": "A structured 6-step process to ensure your project's success",
+      "steps": {
+        "identification": {
+          "title": "Identification",
+          "description": "Detection and analysis of the most relevant investment opportunities."
+        },
+        "qualification": {
+          "title": "Qualification",
+          "description": "Rigorous assessment of each project's viability and potential."
+        },
+        "structuring": {
+          "title": "Structuring",
+          "description": "Legal, financial and operational project setup."
+        },
+        "connection": {
+          "title": "Connection",
+          "description": "Linking with partners, investors and key stakeholders."
+        },
+        "negotiation": {
+          "title": "Negotiation",
+          "description": "Support in discussions and agreement finalization."
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Operational follow-up until full project completion."
+        }
+      }
+    }
+  },
+  "gallery": {
+    "metadata": {
+      "title": "Gallery — Groupe V2A",
+      "description": "Discover the achievements and projects supported by Groupe V2A."
+    },
+    "pageTitle": "Gallery",
+    "pageSubtitle": "Our achievements and supported projects",
+    "filters": {
+      "all": "All",
+      "team": "Team",
+      "realEstate": "Real Estate & Hospitality",
+      "energy": "Energy",
+      "fundraising": "Fundraising",
+      "assets": "Diversified Assets"
+    },
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact — Groupe V2A",
+      "description": "Contact Groupe V2A to discuss your strategic investment projects."
+    },
+    "pageTitle": "Contact us",
+    "pageSubtitle": "Let's discuss your project",
+    "form": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your first and last name",
+      "email": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+44 7000 000000",
+      "company": "Company / Organization",
+      "companyPlaceholder": "Your company name",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjectOptions": {
+        "realEstate": "Real estate or hospitality investment",
+        "energy": "Energy project",
+        "fundraising": "Fundraising",
+        "commodities": "Commodities and strategic assets",
+        "projectSupport": "Project support",
+        "partnership": "Strategic partnership",
+        "press": "Press & Media",
+        "other": "Other inquiry"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or inquiry...",
+      "consent": "I agree that my data will be processed in accordance with Groupe V2A's privacy policy.",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully. We will get back to you shortly.",
+      "error": "An error occurred. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMin": "Name must be at least 2 characters",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "subjectRequired": "Please select a subject",
+      "messageRequired": "Message is required",
+      "messageMin": "Message must be at least 20 characters",
+      "consentRequired": "You must accept the privacy policy"
+    },
+    "info": {
+      "title": "Our contact details",
+      "address": "8, Ruelle Boulot",
+      "phone": "+32 475 29 23 38",
+      "email": "contact@v2agroup.com"
+    }
+  },
+  "legal": {
+    "metadata": {
+      "title": "Legal Notice — Groupe V2A",
+      "description": "Legal notice for the Groupe V2A website."
+    },
+    "pageTitle": "Legal Notice",
+    "editor": {
+      "title": "Website Editor",
+      "content": "Groupe V2A SAS\nAddress: 8, Ruelle Boulot\nEmail: contact@v2agroup.com\nPhone: +32 475 29 23 38\n\nRCS Number: [To be completed]\nShare capital: [To be completed]\nVAT Number: [To be completed]"
+    },
+    "hosting": {
+      "title": "Hosting Provider",
+      "content": "[Hosting provider name]\n[Hosting provider address]\n[Hosting provider phone]"
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "content": "All content on this website (texts, images, videos, logos, trademarks) is the exclusive property of Groupe V2A SAS or its partners. Any reproduction, representation, modification, publication, adaptation or exploitation, partial or complete, is prohibited without prior written authorization."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "Groupe V2A SAS strives to ensure the accuracy of information published on this website. However, it cannot guarantee the accuracy, completeness or timeliness of such information. Accordingly, the user acknowledges using this information at their sole responsibility."
+    },
+    "links": {
+      "title": "Hyperlinks",
+      "content": "This website may contain links to other websites. Groupe V2A SAS has no control over these websites and disclaims all responsibility for their content."
+    }
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Privacy Policy — Groupe V2A",
+      "description": "Privacy and personal data protection policy of Groupe V2A."
+    },
+    "pageTitle": "Privacy Policy",
+    "intro": "Groupe V2A SAS is committed to protecting the privacy of its users. This privacy policy describes the personal data we collect, how we use it and the rights available to you.",
+    "sections": {
+      "collection": {
+        "title": "Data Collection",
+        "content": "We collect personal data that you voluntarily provide through our website's contact form: name, email address, phone number, company name and message content."
+      },
+      "purpose": {
+        "title": "Purpose of Processing",
+        "content": "The data collected is used exclusively to respond to your contact and information requests. It is never sold, exchanged or rented to third parties."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "Your personal data is retained for a maximum of 3 years from your last contact with us, unless a longer legal retention obligation applies."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "In accordance with the General Data Protection Regulation (GDPR), you have the following rights:\n\n- Right of access to your personal data\n- Right to rectification of inaccurate data\n- Right to erasure of your data\n- Right to restriction of processing\n- Right to data portability\n- Right to object to processing\n\nTo exercise these rights, contact us at: contact@v2agroup.com"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "This website uses technical cookies necessary for its proper functioning. No advertising or tracking cookies are used without your explicit consent. You can manage your preferences via the cookie management banner."
+      },
+      "security": {
+        "title": "Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, modification, disclosure or destruction."
+      },
+      "contact": {
+        "title": "DPO Contact",
+        "content": "For any questions regarding the protection of your personal data, you can contact us at: contact@v2agroup.com"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookie Management",
+    "description": "This website uses cookies to improve your experience. You can choose to accept or reject non-essential cookies.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "customize": "Customize"
+  },
+  "footer": {
+    "slogan": "Vision to Action",
+    "sloganSub": "Connecting Capital, Creating Impact",
+    "navigation": "Navigation",
+    "legal": "Legal Information",
+    "contact": "Contact",
+    "rights": "© 2026 Groupe V2A SAS — All rights reserved"
+  }
+}

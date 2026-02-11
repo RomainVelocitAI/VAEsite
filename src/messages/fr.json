@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "title": "Groupe V2A — Conseil & Intermédiation en Investissements Stratégiques",
+    "description": "Le Groupe V2A accompagne investisseurs institutionnels et privés dans leurs projets stratégiques : immobilier, hôtellerie, énergies renouvelables, levée de fonds et actifs diversifiés."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "header": {
+    "cta": "Contact"
+  },
+  "hero": {
+    "title": "Vision to Action",
+    "subtitle": "Connecting Capital, Creating Impact",
+    "cta": "Découvrir nos expertises"
+  },
+  "valueProps": {
+    "sectionTitle": "Notre proposition de valeur",
+    "items": {
+      "experience": {
+        "title": "50+ ans d'expérience",
+        "description": "Une expertise cumulée de plus d'un demi-siècle dans le conseil en investissements stratégiques."
+      },
+      "global": {
+        "title": "5 continents",
+        "description": "Un réseau international couvrant l'ensemble des marchés stratégiques mondiaux."
+      },
+      "fullService": {
+        "title": "De la conception à la livraison",
+        "description": "Un accompagnement intégral à chaque étape de votre projet d'investissement."
+      },
+      "tailored": {
+        "title": "Accompagnement sur mesure",
+        "description": "Des solutions personnalisées, adaptées aux objectifs et aux exigences de chaque investisseur."
+      }
+    }
+  },
+  "expertise": {
+    "sectionTitle": "Nos secteurs d'expertise",
+    "viewAll": "Découvrir tous nos services",
+    "sectors": {
+      "hospitality": {
+        "title": "Hôtellerie & Hébergements Touristiques",
+        "description": "Conception et réalisation de projets hôteliers d'exception."
+      },
+      "realEstate": {
+        "title": "Promotion Immobilière",
+        "description": "Conception et réalisation de programmes immobiliers à forte valeur ajoutée."
+      },
+      "energy": {
+        "title": "Énergies Renouvelables",
+        "description": "Recherche et accompagnement dans les projets énergétiques durables."
+      },
+      "fundraising": {
+        "title": "Levée de Fonds",
+        "description": "Recherche et accompagnement pour vos besoins en financement."
+      },
+      "assets": {
+        "title": "Actifs Diversifiés",
+        "description": "Recherche et accompagnement dans la diversification d'actifs stratégiques."
+      }
+    }
+  },
+  "keyFigures": {
+    "sectionTitle": "Chiffres clés",
+    "experience": "Années d'expérience cumulées",
+    "continents": "Continents couverts",
+    "projects": "Projets accompagnés",
+    "partners": "Partenaires stratégiques"
+  },
+  "ctaBand": {
+    "title": "Prêt à concrétiser votre vision ?",
+    "description": "Contactez-nous pour discuter de votre projet d'investissement.",
+    "cta": "Contactez-nous"
+  },
+  "about": {
+    "metadata": {
+      "title": "À propos — Groupe V2A",
+      "description": "Découvrez la vision, la mission et l'équipe dirigeante du Groupe V2A, société de conseil en investissements stratégiques."
+    },
+    "vision": {
+      "sectionTitle": "Notre vision",
+      "text": "Le Groupe V2A se positionne comme un acteur clé dans la chaîne de valeur transactionnelle, reliant les investisseurs aux opportunités les plus pertinentes grâce à une approche rigoureuse et sélective.",
+      "mission": "Notre mission est de créer de la valeur durable en identifiant, structurant et accompagnant des projets d'investissement à fort potentiel, tout en garantissant un alignement parfait entre les intérêts de toutes les parties prenantes."
+    },
+    "team": {
+      "sectionTitle": "Équipe dirigeante",
+      "members": {
+        "valere": {
+          "name": "Valère Duchenne",
+          "title": "Cofondateur & Directeur Général",
+          "expertise": "Expertise en structuration financière et développement de projets immobiliers et hôteliers internationaux."
+        },
+        "andrew": {
+          "name": "Andrew Duchenne",
+          "title": "Cofondateur & Directeur des Opérations",
+          "expertise": "Spécialiste en gestion opérationnelle et déploiement de projets à grande échelle sur les marchés émergents."
+        },
+        "angelo": {
+          "name": "Angelo Rapazzini",
+          "title": "Cofondateur & Directeur Stratégique",
+          "expertise": "Expert en stratégie d'investissement et en intermédiation financière sur les marchés internationaux."
+        }
+      }
+    },
+    "values": {
+      "sectionTitle": "Nos valeurs",
+      "selectivity": {
+        "title": "Sélectivité",
+        "description": "Nous ne retenons que les projets répondant à nos critères rigoureux de qualité et de rentabilité."
+      },
+      "transparency": {
+        "title": "Transparence",
+        "description": "Une communication claire et honnête à chaque étape du processus d'investissement."
+      },
+      "alignment": {
+        "title": "Alignement des intérêts",
+        "description": "Nos recommandations sont guidées par l'intérêt commun de toutes les parties prenantes."
+      },
+      "confidentiality": {
+        "title": "Confidentialité",
+        "description": "La protection des informations sensibles est au cœur de notre engagement professionnel."
+      }
+    }
+  },
+  "services": {
+    "metadata": {
+      "title": "Services — Groupe V2A",
+      "description": "Découvrez les expertises du Groupe V2A : hôtellerie, immobilier, énergies renouvelables, levée de fonds et actifs diversifiés."
+    },
+    "pageTitle": "Nos expertises",
+    "pageSubtitle": "Un accompagnement global pour vos projets d'investissement stratégiques",
+    "sectors": {
+      "hospitality": {
+        "title": "Hôtellerie & Hébergements Touristiques",
+        "type": "Conception et réalisation",
+        "description": "Le Groupe V2A conçoit et réalise des projets hôteliers d'exception, de la phase de conception architecturale à la livraison opérationnelle. Notre expertise couvre l'ensemble des typologies d'hébergement : hôtels de luxe, resorts, résidences touristiques et concepts innovants d'hospitalité.",
+        "highlights": ["Études de faisabilité et de marché", "Conception architecturale et design d'intérieur", "Gestion de projet et suivi de chantier", "Mise en exploitation et management hôtelier"]
+      },
+      "realEstate": {
+        "title": "Promotion Immobilière",
+        "type": "Conception et réalisation",
+        "description": "Nous développons des programmes immobiliers à forte valeur ajoutée, résidentiels et commerciaux, sur les marchés les plus prometteurs. Notre approche intégrée garantit la maîtrise de chaque étape, de l'identification foncière à la commercialisation.",
+        "highlights": ["Prospection et acquisition foncière", "Montage juridique et financier", "Pilotage de la construction", "Stratégie de commercialisation"]
+      },
+      "energy": {
+        "title": "Énergies Renouvelables",
+        "type": "Recherche et accompagnement",
+        "description": "Le Groupe V2A identifie et accompagne les investisseurs dans les projets d'énergies renouvelables : solaire, éolien, biomasse et hydrogène. Nous structurons les opportunités et facilitons la mise en relation entre porteurs de projets et investisseurs qualifiés.",
+        "highlights": ["Identification de projets à fort potentiel", "Due diligence technique et financière", "Structuration des investissements", "Mise en relation investisseurs-porteurs de projets"]
+      },
+      "fundraising": {
+        "title": "Levée de Fonds",
+        "type": "Recherche et accompagnement",
+        "description": "Nous accompagnons les entreprises et porteurs de projets dans leurs levées de fonds, en identifiant les investisseurs les plus pertinents et en structurant les opérations pour maximiser les chances de succès.",
+        "highlights": ["Préparation du dossier d'investissement", "Identification et qualification d'investisseurs", "Structuration financière", "Accompagnement à la négociation"]
+      },
+      "assets": {
+        "title": "Actifs Diversifiés",
+        "type": "Recherche et accompagnement",
+        "description": "Le Groupe V2A conseille ses clients dans la diversification de leurs portefeuilles d'investissement, en identifiant des actifs stratégiques à fort potentiel : matières premières, actifs alternatifs et opportunités de marché.",
+        "highlights": ["Analyse de marché et veille stratégique", "Identification d'actifs à fort rendement", "Structuration d'opérations complexes", "Accompagnement dans la prise de décision"]
+      }
+    },
+    "process": {
+      "sectionTitle": "Accompagnement Intégral",
+      "subtitle": "Un processus structuré en 6 étapes pour garantir le succès de votre projet",
+      "steps": {
+        "identification": {
+          "title": "Identification",
+          "description": "Détection et analyse des opportunités d'investissement les plus pertinentes."
+        },
+        "qualification": {
+          "title": "Qualification",
+          "description": "Évaluation rigoureuse de la viabilité et du potentiel de chaque projet."
+        },
+        "structuring": {
+          "title": "Structuration",
+          "description": "Montage juridique, financier et opérationnel du projet."
+        },
+        "connection": {
+          "title": "Mise en relation",
+          "description": "Connexion avec les partenaires, investisseurs et acteurs clés."
+        },
+        "negotiation": {
+          "title": "Négociation",
+          "description": "Accompagnement dans les discussions et la finalisation des accords."
+        },
+        "delivery": {
+          "title": "Livraison",
+          "description": "Suivi opérationnel jusqu'à la concrétisation complète du projet."
+        }
+      }
+    }
+  },
+  "gallery": {
+    "metadata": {
+      "title": "Galerie — Groupe V2A",
+      "description": "Découvrez les réalisations et projets accompagnés par le Groupe V2A."
+    },
+    "pageTitle": "Galerie",
+    "pageSubtitle": "Nos réalisations et projets accompagnés",
+    "filters": {
+      "all": "Tous",
+      "team": "Équipe",
+      "realEstate": "Immobilier & Hôtellerie",
+      "energy": "Énergie",
+      "fundraising": "Levée de Fonds",
+      "assets": "Actifs Diversifiés"
+    },
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact — Groupe V2A",
+      "description": "Contactez le Groupe V2A pour discuter de vos projets d'investissement stratégiques."
+    },
+    "pageTitle": "Contactez-nous",
+    "pageSubtitle": "Échangeons sur votre projet",
+    "form": {
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Votre nom et prénom",
+      "email": "Adresse email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 00 00 00 00",
+      "company": "Société / Organisation",
+      "companyPlaceholder": "Nom de votre société",
+      "subject": "Objet de la demande",
+      "subjectPlaceholder": "Sélectionnez un objet",
+      "subjectOptions": {
+        "realEstate": "Investissement immobilier ou hôtelier",
+        "energy": "Projet énergétique",
+        "fundraising": "Levée de fonds",
+        "commodities": "Matières premières et actifs stratégiques",
+        "projectSupport": "Accompagnement de projet",
+        "partnership": "Partenariat stratégique",
+        "press": "Presse & Médias",
+        "other": "Autre demande"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou votre demande...",
+      "consent": "J'accepte que mes données soient traitées conformément à la politique de confidentialité du Groupe V2A.",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Votre message a bien été envoyé. Nous reviendrons vers vous dans les meilleurs délais.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "nameMin": "Le nom doit contenir au moins 2 caractères",
+      "emailRequired": "L'adresse email est requise",
+      "emailInvalid": "Veuillez entrer une adresse email valide",
+      "phoneInvalid": "Veuillez entrer un numéro de téléphone valide",
+      "subjectRequired": "Veuillez sélectionner un objet",
+      "messageRequired": "Le message est requis",
+      "messageMin": "Le message doit contenir au moins 20 caractères",
+      "consentRequired": "Vous devez accepter la politique de confidentialité"
+    },
+    "info": {
+      "title": "Nos coordonnées",
+      "address": "8, Ruelle Boulot",
+      "phone": "+32 475 29 23 38",
+      "email": "contact@v2agroup.com"
+    }
+  },
+  "legal": {
+    "metadata": {
+      "title": "Mentions légales — Groupe V2A",
+      "description": "Mentions légales du site du Groupe V2A."
+    },
+    "pageTitle": "Mentions légales",
+    "editor": {
+      "title": "Éditeur du site",
+      "content": "Groupe V2A SAS\nAdresse : 8, Ruelle Boulot\nEmail : contact@v2agroup.com\nTéléphone : +32 475 29 23 38\n\nNuméro RCS : [À compléter]\nCapital social : [À compléter]\nNuméro TVA : [À compléter]"
+    },
+    "hosting": {
+      "title": "Hébergeur",
+      "content": "[Nom de l'hébergeur]\n[Adresse de l'hébergeur]\n[Téléphone de l'hébergeur]"
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "content": "L'ensemble du contenu de ce site (textes, images, vidéos, logos, marques) est la propriété exclusive du Groupe V2A SAS ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation ou exploitation, partielle ou intégrale, est interdite sans autorisation écrite préalable."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "Le Groupe V2A SAS s'efforce d'assurer l'exactitude des informations diffusées sur ce site. Toutefois, il ne peut garantir l'exactitude, la complétude ou l'actualité de ces informations. En conséquence, l'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive."
+    },
+    "links": {
+      "title": "Liens hypertextes",
+      "content": "Ce site peut contenir des liens vers d'autres sites. Le Groupe V2A SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu."
+    }
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Politique de confidentialité — Groupe V2A",
+      "description": "Politique de confidentialité et de protection des données personnelles du Groupe V2A."
+    },
+    "pageTitle": "Politique de confidentialité",
+    "intro": "Le Groupe V2A SAS s'engage à protéger la vie privée de ses utilisateurs. Cette politique de confidentialité décrit les données personnelles que nous collectons, comment nous les utilisons et les droits dont vous disposez.",
+    "sections": {
+      "collection": {
+        "title": "Collecte des données",
+        "content": "Nous collectons les données personnelles que vous nous fournissez volontairement via le formulaire de contact de notre site : nom, adresse email, numéro de téléphone, nom de société et contenu du message."
+      },
+      "purpose": {
+        "title": "Finalité du traitement",
+        "content": "Les données collectées sont exclusivement utilisées pour répondre à vos demandes de contact et d'information. Elles ne sont jamais vendues, échangées ou louées à des tiers."
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "content": "Vos données personnelles sont conservées pendant une durée maximale de 3 ans à compter de votre dernier contact avec nous, sauf obligation légale de conservation plus longue."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "content": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :\n\n- Droit d'accès à vos données personnelles\n- Droit de rectification de données inexactes\n- Droit à l'effacement de vos données\n- Droit à la limitation du traitement\n- Droit à la portabilité de vos données\n- Droit d'opposition au traitement\n\nPour exercer ces droits, contactez-nous à : contact@v2agroup.com"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Ce site utilise des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou de suivi n'est utilisé sans votre consentement explicite. Vous pouvez gérer vos préférences via le bandeau de gestion des cookies."
+      },
+      "security": {
+        "title": "Sécurité",
+        "content": "Nous mettons en œuvre les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, modification, divulgation ou destruction."
+      },
+      "contact": {
+        "title": "Contact DPO",
+        "content": "Pour toute question relative à la protection de vos données personnelles, vous pouvez nous contacter à : contact@v2agroup.com"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Gestion des cookies",
+    "description": "Ce site utilise des cookies pour améliorer votre expérience. Vous pouvez choisir d'accepter ou de refuser les cookies non essentiels.",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "customize": "Paramétrer"
+  },
+  "footer": {
+    "slogan": "Vision to Action",
+    "sloganSub": "Connecting Capital, Creating Impact",
+    "navigation": "Navigation",
+    "legal": "Informations légales",
+    "contact": "Contact",
+    "rights": "© 2026 Groupe V2A SAS — Tous droits réservés"
+  }
+}
