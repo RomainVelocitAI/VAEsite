@@ -1,9 +1,31 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { Menu, X } from "lucide-react";
+
+function FlagFR({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 30 20" className={className} aria-hidden="true">
+      <rect width="10" height="20" fill="#002395" />
+      <rect x="10" width="10" height="20" fill="#FFFFFF" />
+      <rect x="20" width="10" height="20" fill="#ED2939" />
+    </svg>
+  );
+}
+
+function FlagEN({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 30 20" className={className} aria-hidden="true">
+      <rect width="30" height="20" fill="#012169" />
+      <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" strokeWidth="3" />
+      <path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" strokeWidth="1.5" />
+      <path d="M15,0 V20 M0,10 H30" stroke="#FFFFFF" strokeWidth="5" />
+      <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" strokeWidth="3" />
+    </svg>
+  );
+}
 
 const NAV_ITEMS = [
   { key: "home", href: "/" as const },
@@ -17,8 +39,14 @@ export function Header() {
   const t = useTranslations("nav");
   const tHeader = useTranslations("header");
   const pathname = usePathname();
+  const locale = useLocale();
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const switchLocale = useCallback((newLocale: "fr" | "en") => {
+    router.replace(pathname, { locale: newLocale });
+  }, [router, pathname]);
 
   const handleScroll = useCallback(() => {
     setIsScrolled(window.scrollY > 20);
@@ -94,8 +122,38 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Desktop CTA + Mobile Toggle */}
-        <div className="flex items-center gap-4">
+        {/* Desktop CTA + Language Switcher + Mobile Toggle */}
+        <div className="flex items-center gap-3">
+          {/* Language Switcher */}
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => switchLocale("fr")}
+              className={`relative p-1.5 rounded transition-all duration-300 ${
+                locale === "fr"
+                  ? "opacity-100 ring-1 ring-or/50"
+                  : "opacity-40 hover:opacity-80"
+              }`}
+              aria-label="Français"
+              title="Français"
+            >
+              <FlagFR className="w-5 h-3.5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => switchLocale("en")}
+              className={`relative p-1.5 rounded transition-all duration-300 ${
+                locale === "en"
+                  ? "opacity-100 ring-1 ring-or/50"
+                  : "opacity-40 hover:opacity-80"
+              }`}
+              aria-label="English"
+              title="English"
+            >
+              <FlagEN className="w-5 h-3.5" />
+            </button>
+          </div>
+
           <Link
             href="/contact"
             className="hidden lg:inline-flex items-center px-6 py-2.5 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-[#b8984f] hover:shadow-[0_4px_20px_rgba(197,165,114,0.3)]"
@@ -197,7 +255,37 @@ export function Header() {
                 {tHeader("cta")}
               </Link>
 
-              <p className="mt-6 text-[11px] tracking-[0.1em] text-texte/30 font-normal italic font-accent">
+              {/* Mobile Language Switcher */}
+              <div className="mt-6 flex items-center justify-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => { switchLocale("fr"); setIsMobileMenuOpen(false); }}
+                  className={`flex items-center gap-2 px-3 py-2 rounded transition-all duration-300 ${
+                    locale === "fr"
+                      ? "bg-noir/5 ring-1 ring-or/40"
+                      : "opacity-50 hover:opacity-80"
+                  }`}
+                  aria-label="Français"
+                >
+                  <FlagFR className="w-5 h-3.5" />
+                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-texte/70">FR</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { switchLocale("en"); setIsMobileMenuOpen(false); }}
+                  className={`flex items-center gap-2 px-3 py-2 rounded transition-all duration-300 ${
+                    locale === "en"
+                      ? "bg-noir/5 ring-1 ring-or/40"
+                      : "opacity-50 hover:opacity-80"
+                  }`}
+                  aria-label="English"
+                >
+                  <FlagEN className="w-5 h-3.5" />
+                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-texte/70">EN</span>
+                </button>
+              </div>
+
+              <p className="mt-4 text-[11px] tracking-[0.1em] text-texte/30 font-normal italic font-accent">
                 Connecting Capital, Creating Impact
               </p>
             </div>
