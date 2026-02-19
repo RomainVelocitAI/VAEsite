@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { GalleryContent } from "@/components/sections/GalleryContent";
+import { CtaBand } from "@/components/sections/CtaBand";
 
 export async function generateMetadata({
   params,
@@ -31,6 +32,9 @@ export default async function GalleryPage({
     <>
       <PageHeader title={t("pageTitle")} subtitle={t("pageSubtitle")} />
       <GalleryContent />
+
+      {/* CTA Band with background image */}
+      <CtaBand />
     </>
   );
 }

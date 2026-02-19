@@ -18,7 +18,7 @@ export async function generateMetadata({
   };
 }
 
-const SECTIONS = ["editor", "hosting", "ip", "liability", "links"] as const;
+const SECTIONS = ["editor", "hosting", "ip", "liability", "data"] as const;
 
 export default async function LegalNoticePage({
   params,

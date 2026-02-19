@@ -19,13 +19,17 @@ export async function generateMetadata({
 }
 
 const SECTIONS = [
+  "controller",
   "collection",
   "purpose",
+  "legalBasis",
   "retention",
+  "recipients",
+  "transfers",
   "rights",
   "cookies",
   "security",
-  "contact",
+  "changes",
 ] as const;
 
 export default async function PrivacyPolicyPage({
@@ -45,10 +49,10 @@ export default async function PrivacyPolicyPage({
       <section className="section-diagonal-top bg-blanc py-20 md:py-28">
         <Container>
           <div className="max-w-3xl mx-auto">
-            {/* Intro */}
+            {/* Last updated */}
             <AnimateOnScroll variant="fadeUp">
-              <p className="text-base text-texte/70 leading-relaxed mb-12">
-                {t("intro")}
+              <p className="text-[13px] text-texte/40 uppercase tracking-[0.1em] mb-12">
+                {t("lastUpdated")}
               </p>
             </AnimateOnScroll>
 

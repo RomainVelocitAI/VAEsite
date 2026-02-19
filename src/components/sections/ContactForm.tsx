@@ -1,10 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import { contactFormSchema, type ContactFormData } from "@/lib/validations";
 import { Link } from "@/i18n/navigation";
+import { Paperclip, X } from "lucide-react";
+
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
+const ACCEPTED_FILE_TYPES = [
+  "application/pdf",
+  "image/jpeg",
+  "image/jpg",
+  "image/png",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
+const ACCEPTED_EXTENSIONS = ".pdf,.jpg,.jpeg,.png,.docx";
 
 // Manual validation to avoid zod v4/resolver compatibility issues
 function validateForm(data: Record<string, unknown>, t: ReturnType<typeof useTranslations>) {
@@ -70,7 +81,42 @@ const labelBase = "block text-[13px] font-bold uppercase tracking-[0.18em] text-
 export function ContactForm() {
   const t = useTranslations("contact");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [attachment, setAttachment] = useState<File | null>(null);
+  const [attachmentError, setAttachmentError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const { register, handleSubmit, formState: { errors }, setError, clearErrors, reset } = useForm<ContactFormData>();
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    setAttachmentError(null);
+
+    if (!file) {
+      setAttachment(null);
+      return;
+    }
+
+    if (file.size > MAX_FILE_SIZE) {
+      setAttachmentError(t("form.attachmentError"));
+      setAttachment(null);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+      return;
+    }
+
+    if (!ACCEPTED_FILE_TYPES.includes(file.type)) {
+      setAttachmentError(t("form.attachmentError"));
+      setAttachment(null);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+      return;
+    }
+
+    setAttachment(file);
+  };
+
+  const removeAttachment = () => {
+    setAttachment(null);
+    setAttachmentError(null);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+  };
 
   const onSubmit = async (data: ContactFormData) => {
     // Manual validation
@@ -91,6 +137,7 @@ export function ContactForm() {
     // Simulated submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setStatus("success");
+    setAttachment(null);
     reset();
   };
 
@@ -227,6 +274,51 @@ export function ContactForm() {
         />
         {errors.message && (
           <p className="mt-1.5 text-[11px] text-red-600 tracking-wide">{errors.message.message}</p>
+        )}
+      </div>
+
+      {/* File Attachment */}
+      <div>
+        <label className={labelBase}>
+          {t("form.attachment")}
+        </label>
+        {attachment ? (
+          <div className="flex items-center gap-3 p-3.5 bg-blanc border border-or/20">
+            <Paperclip size={16} strokeWidth={1.5} className="text-or shrink-0" />
+            <span className="text-[14px] text-texte/70 truncate flex-1">
+              {attachment.name}
+            </span>
+            <span className="text-[12px] text-texte/40 shrink-0">
+              {(attachment.size / 1024 / 1024).toFixed(1)} Mo
+            </span>
+            <button
+              type="button"
+              onClick={removeAttachment}
+              className="text-texte/40 hover:text-red-500 transition-colors duration-300 cursor-pointer"
+            >
+              <X size={16} strokeWidth={1.5} />
+            </button>
+          </div>
+        ) : (
+          <label className="group flex items-center gap-3 p-3.5 bg-blanc border border-dashed border-noir/15 hover:border-or/40 transition-all duration-300 cursor-pointer">
+            <Paperclip size={16} strokeWidth={1.5} className="text-or shrink-0" />
+            <span className="text-[14px] text-texte/50 group-hover:text-texte/70 transition-colors duration-300">
+              {t("form.attachmentButton")}
+            </span>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept={ACCEPTED_EXTENSIONS}
+              onChange={handleFileChange}
+              className="hidden"
+            />
+          </label>
+        )}
+        <p className="mt-1.5 text-[11px] text-texte/40 tracking-wide">
+          {t("form.attachmentHint")}
+        </p>
+        {attachmentError && (
+          <p className="mt-1.5 text-[11px] text-red-600 tracking-wide">{attachmentError}</p>
         )}
       </div>
 

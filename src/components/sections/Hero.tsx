@@ -20,7 +20,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+          src="/images/hero/page-accueil.webp"
           alt=""
           fill
           className={`object-cover transition-transform duration-[2s] ease-out ${
@@ -61,7 +61,7 @@ export function Hero() {
           style={{ transitionDelay: "500ms" }}
         >
           <span className="inline-block text-[13px] font-bold tracking-[0.5em] text-or/80 uppercase">
-            Groupe
+            Group
           </span>
         </div>
 
@@ -93,7 +93,7 @@ export function Hero() {
           style={{ transitionDelay: "1050ms" }}
         >
           <Link
-            href="/services"
+            href="/expertises"
             className="group inline-flex items-center gap-3 px-8 py-4 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.2em] transition-all duration-500 hover:bg-blanc hover:shadow-[0_8px_40px_rgba(197,165,114,0.25)]"
           >
             <span>{t("cta")}</span>

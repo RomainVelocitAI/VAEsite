@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { Clock, Globe, ArrowRight, Users } from "lucide-react";
+import { Clock, Globe, ArrowRight, Users, Shield, Eye, Handshake, Lock } from "lucide-react";
 import { Hero } from "@/components/sections/Hero";
 import { KeyFigures } from "@/components/sections/KeyFigures";
 import { Container } from "@/components/ui/Container";
@@ -9,6 +9,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Button } from "@/components/ui/Button";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { Link } from "@/i18n/navigation";
+import { CtaBand } from "@/components/sections/CtaBand";
 
 const VALUE_PROPS = [
   { key: "experience", Icon: Clock },
@@ -18,26 +19,18 @@ const VALUE_PROPS = [
 ] as const;
 
 const EXPERTISE_SECTORS = [
-  {
-    key: "hospitality",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-  },
-  {
-    key: "realEstate",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-  },
-  {
-    key: "energy",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
-  },
-  {
-    key: "fundraising",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-  },
-  {
-    key: "assets",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
-  },
+  { key: "hospitality", image: "/images/sectors/carte-hotellerie.webp" },
+  { key: "realEstate", image: "/images/sectors/carte-promotion-immobiliere.webp" },
+  { key: "energy", image: "/images/sectors/carte-energies-renouvelables.webp" },
+  { key: "fundraising", image: "/images/sectors/carte-levee-de-fonds.webp" },
+  { key: "assets", image: "/images/sectors/carte-actifs-diversifies.webp" },
+] as const;
+
+const APPROACH_PILLARS = [
+  { key: "selectivity", Icon: Shield },
+  { key: "transparency", Icon: Eye },
+  { key: "alignment", Icon: Handshake },
+  { key: "confidentiality", Icon: Lock },
 ] as const;
 
 export default async function HomePage({
@@ -50,7 +43,7 @@ export default async function HomePage({
 
   const t = await getTranslations("valueProps");
   const tExpertise = await getTranslations("expertise");
-  const tCta = await getTranslations("ctaBand");
+  const tApproach = await getTranslations("approach");
 
   return (
     <>
@@ -87,10 +80,14 @@ export default async function HomePage({
         <Container>
           <SectionTitle title={tExpertise("sectionTitle")} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
             {EXPERTISE_SECTORS.map((sector, i) => (
-              <AnimateOnScroll key={sector.key} delay={i * 100} variant="scaleIn">
-                <Link href="/services" className="group block relative aspect-[4/3] overflow-hidden hover-scale">
+              <div key={sector.key} className={`lg:col-span-2 ${i === 3 ? "lg:col-start-2" : ""}`}>
+              <AnimateOnScroll delay={i * 100} variant="scaleIn">
+                <Link
+                  href="/expertises"
+                  className="group block relative aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_16px_48px_rgba(0,0,0,0.25),0_0_0_2px_rgba(197,165,114,0.5)]"
+                >
                   <Image
                     src={sector.image}
                     alt={tExpertise(`sectors.${sector.key}.title`)}
@@ -98,33 +95,37 @@ export default async function HomePage({
                     className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  {/* Default overlay */}
+                  {/* Default gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-noir/30 to-noir/10 transition-opacity duration-500" />
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-noir/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  {/* Gold border on hover */}
-                  <div className="absolute inset-0 border-2 border-or/0 group-hover:border-or/40 transition-all duration-500 m-3 group-hover:m-4" />
+                  {/* Hover darkening */}
+                  <div className="absolute inset-0 bg-noir/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Gold border accent on hover */}
+                  <div className="absolute inset-0 border-2 border-or/0 group-hover:border-or/60 transition-all duration-500" />
+                  {/* Gold top accent line */}
+                  <div className="absolute top-0 left-0 w-0 h-[3px] bg-or group-hover:w-full transition-all duration-700" />
 
                   <div className="absolute inset-0 flex flex-col justify-end p-6">
-                    <h3 className="text-[18px] font-bold text-blanc tracking-wide leading-snug transition-transform duration-500 group-hover:-translate-y-1">
+                    <h3 className="text-[18px] font-bold text-blanc tracking-wide leading-snug transition-transform duration-500 group-hover:-translate-y-2">
                       {tExpertise(`sectors.${sector.key}.title`)}
                     </h3>
-                    <p className="mt-2 text-[15px] text-blanc/60 leading-relaxed line-clamp-2 transition-transform duration-500 group-hover:-translate-y-1">
+                    {/* Summary fades in on hover */}
+                    <p className="mt-2 text-[14px] text-blanc/70 leading-relaxed line-clamp-3 max-h-0 overflow-hidden opacity-0 group-hover:max-h-24 group-hover:opacity-100 transition-all duration-500 delay-100">
                       {tExpertise(`sectors.${sector.key}.description`)}
                     </p>
-                    <div className="mt-3 flex items-center gap-2 text-or text-[13px] font-bold uppercase tracking-[0.15em] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                    <div className="mt-3 flex items-center gap-2 text-or text-[13px] font-bold uppercase tracking-[0.15em] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-150">
                       <span>Découvrir</span>
                       <ArrowRight size={12} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-1" />
                     </div>
                   </div>
                 </Link>
               </AnimateOnScroll>
+              </div>
             ))}
           </div>
 
           <AnimateOnScroll delay={300}>
             <div className="mt-12 text-center">
-              <Button href="/services" variant="secondary">
+              <Button href="/expertises" variant="secondary">
                 {tExpertise("viewAll")}
               </Button>
             </div>
@@ -137,25 +138,54 @@ export default async function HomePage({
         <KeyFigures />
       </div>
 
-      {/* CTA Band */}
-      <section className="section-diagonal-top-reverse bg-creme py-20 md:py-28" style={{ zIndex: 5 }}>
-        <Container>
+      {/* Notre approche */}
+      <section className="relative py-20 md:py-28 overflow-hidden" style={{ zIndex: 5 }}>
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/backgrounds/notre-approche.webp"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-noir/75" />
+        </div>
+
+        <Container className="relative z-10">
           <AnimateOnScroll variant="scaleIn">
-            <div className="text-center max-w-xl mx-auto">
-              <h2 className="text-[28px] md:text-[36px] font-bold text-noir tracking-tight">
-                {tCta("title")}
+            <div className="text-center mb-14">
+              <h2 className="text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
+                {tApproach("sectionTitle")}
               </h2>
               <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
-              <p className="mt-5 text-[17px] text-texte/60 leading-relaxed">
-                {tCta("description")}
-              </p>
-              <div className="mt-8">
-                <Button href="/contact">{tCta("cta")}</Button>
-              </div>
             </div>
           </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {APPROACH_PILLARS.map((pillar, i) => (
+              <AnimateOnScroll key={pillar.key} delay={i * 150} variant="fadeUp">
+                <div className="group text-center p-8 border border-blanc/10 bg-blanc/[0.04] backdrop-blur-sm hover:border-or/40 hover:bg-blanc/[0.08] transition-all duration-500">
+                  <pillar.Icon
+                    size={28}
+                    strokeWidth={1.2}
+                    className="text-or mx-auto mb-5 transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <h3 className="text-[17px] font-bold text-blanc mb-3 tracking-wide">
+                    {tApproach(`pillars.${pillar.key}.title`)}
+                  </h3>
+                  <p className="text-[14px] text-blanc/50 leading-relaxed group-hover:text-blanc/70 transition-colors duration-500">
+                    {tApproach(`pillars.${pillar.key}.description`)}
+                  </p>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
         </Container>
       </section>
+
+      {/* CTA Band with background image */}
+      <CtaBand />
     </>
   );
 }

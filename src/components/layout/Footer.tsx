@@ -23,7 +23,7 @@ export function Footer() {
                 V2A
               </span>
               <span className="ml-2 text-[10px] tracking-[0.25em] uppercase text-blanc/40">
-                Groupe
+                Group
               </span>
             </div>
             <p className="text-or text-sm font-bold tracking-[0.08em]">
@@ -43,7 +43,7 @@ export function Footer() {
               {[
                 { key: "home", href: "/" as const },
                 { key: "about", href: "/a-propos" as const },
-                { key: "services", href: "/services" as const },
+                { key: "expertises", href: "/expertises" as const },
                 { key: "gallery", href: "/galerie" as const },
                 { key: "contact", href: "/contact" as const },
               ].map((item) => (
@@ -92,18 +92,31 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={14} className="text-or mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="text-[15px] text-blanc/50 tracking-wide">
-                  {tContact("address")}
-                </span>
+                <div className="space-y-1">
+                  <span className="block text-[15px] text-blanc/50 tracking-wide">
+                    {tContact("addressReunion")}
+                  </span>
+                  <span className="block text-[15px] text-blanc/50 tracking-wide">
+                    {tContact("addressLuxembourg")}
+                  </span>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={14} className="text-or mt-0.5 shrink-0" strokeWidth={1.5} />
-                <a
-                  href="tel:+32475292338"
-                  className="text-[15px] text-blanc/50 hover:text-or transition-colors duration-300 tracking-wide"
-                >
-                  {tContact("phone")}
-                </a>
+                <div className="space-y-1">
+                  <a
+                    href="tel:+32475292338"
+                    className="block text-[15px] text-blanc/50 hover:text-or transition-colors duration-300 tracking-wide"
+                  >
+                    {tContact("phoneOne")}
+                  </a>
+                  <a
+                    href="tel:+262693659589"
+                    className="block text-[15px] text-blanc/50 hover:text-or transition-colors duration-300 tracking-wide"
+                  >
+                    {tContact("phoneTwo")}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={14} className="text-or mt-0.5 shrink-0" strokeWidth={1.5} />

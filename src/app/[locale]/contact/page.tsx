@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
-import { PageHeader } from "@/components/sections/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { ContactForm } from "@/components/sections/ContactForm";
@@ -32,7 +32,32 @@ export default async function ContactPage({
 
   return (
     <>
-      <PageHeader title={t("pageTitle")} subtitle={t("pageSubtitle")} />
+      {/* Hero with background image */}
+      <section className="relative h-[50vh] min-h-[360px] max-h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero/page-contact.webp"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-noir/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-noir/30" />
+        </div>
+        <Container className="relative z-10">
+          <div className="text-center">
+            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-blanc tracking-tight">
+              {t("pageTitle")}
+            </h1>
+            <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
+            <p className="mt-4 text-[17px] md:text-lg font-accent italic text-or/70 max-w-xl mx-auto">
+              {t("pageSubtitle")}
+            </p>
+          </div>
+        </Container>
+      </section>
 
       <section className="section-diagonal-top bg-creme py-20 md:py-28">
         <Container>
@@ -53,20 +78,35 @@ export default async function ContactPage({
                   </h2>
 
                   <ul className="space-y-6">
+                    {/* Two addresses */}
                     <li className="group flex items-start gap-4">
                       <MapPin size={18} strokeWidth={1.2} className="text-or mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-125" />
-                      <span className="text-base text-texte/70 leading-relaxed group-hover:text-texte transition-colors duration-300">
-                        {t("info.address")}
-                      </span>
+                      <div className="space-y-2">
+                        <span className="block text-base text-texte/70 leading-relaxed group-hover:text-texte transition-colors duration-300">
+                          {t("info.addressReunion")}
+                        </span>
+                        <span className="block text-base text-texte/70 leading-relaxed group-hover:text-texte transition-colors duration-300">
+                          {t("info.addressLuxembourg")}
+                        </span>
+                      </div>
                     </li>
+                    {/* Two phones */}
                     <li className="group flex items-start gap-4">
                       <Phone size={18} strokeWidth={1.2} className="text-or mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-125" />
-                      <a
-                        href="tel:+32475292338"
-                        className="text-base text-texte/70 hover:text-or transition-colors duration-300"
-                      >
-                        {t("info.phone")}
-                      </a>
+                      <div className="space-y-2">
+                        <a
+                          href="tel:+32475292338"
+                          className="block text-base text-texte/70 hover:text-or transition-colors duration-300"
+                        >
+                          {t("info.phoneOne")}
+                        </a>
+                        <a
+                          href="tel:+262693659589"
+                          className="block text-base text-texte/70 hover:text-or transition-colors duration-300"
+                        >
+                          {t("info.phoneTwo")}
+                        </a>
+                      </div>
                     </li>
                     <li className="group flex items-start gap-4">
                       <Mail size={18} strokeWidth={1.2} className="text-or mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-125" />
@@ -89,7 +129,7 @@ export default async function ContactPage({
                       allowFullScreen={false}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Localisation Groupe V2A"
+                      title="Localisation V2A Group"
                     />
                   </div>
                 </div>

@@ -30,9 +30,8 @@ function FlagEN({ className }: { className?: string }) {
 const NAV_ITEMS = [
   { key: "home", href: "/" as const },
   { key: "about", href: "/a-propos" as const },
-  { key: "services", href: "/services" as const },
+  { key: "expertises", href: "/expertises" as const },
   { key: "gallery", href: "/galerie" as const },
-  { key: "contact", href: "/contact" as const },
 ] as const;
 
 export function Header() {
@@ -94,7 +93,7 @@ export function Header() {
           </span>
           <span className="hidden sm:block w-[1px] h-5 bg-or/40 mx-1" />
           <span className="hidden sm:block text-[10px] font-normal tracking-[0.25em] uppercase text-texte/60 leading-tight">
-            Groupe
+            Group
           </span>
         </Link>
 
