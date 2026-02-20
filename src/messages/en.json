@@ -314,7 +314,7 @@
     "pageTitle": "Legal Notice",
     "editor": {
       "title": "Website Editor",
-      "content": "Groupe V2A SAS\nRegistered office: 8 Ruelle Boulot, 97400 Saint-Denis, Réunion Island\nRCS Saint-Denis de La Réunion: 101 033 694\nSecondary establishment: 63, Happtstrooss, L-9780 Wincrange, Luxembourg\nPhone: +32 475 29 23 38 / +262 693 659 589\nEmail: contact@v2agroup.com\nPublication Director: Valère Duchenne, Managing Partner"
+      "content": "V2A Group SAS\nRegistered office: 8 Ruelle Boulot, 97400 Saint-Denis, Réunion Island\nRCS Saint-Denis de La Réunion: 101 033 694\nSecondary establishment: 63, Happtstrooss, L-9780 Wincrange, Luxembourg\nPhone: +32 475 29 23 38 / +262 693 659 589\nEmail: contact@v2agroup.com\nPublication Director: Valère Duchenne, Managing Partner"
     },
     "hosting": {
       "title": "Hosting",
@@ -322,11 +322,11 @@
     },
     "ip": {
       "title": "Intellectual Property",
-      "content": "All content on this website (texts, images, videos, logos, trademarks, graphic elements) is the exclusive property of Groupe V2A or its partners and is protected by French and international intellectual property laws. Any reproduction, representation, modification, publication or adaptation of all or part of the website elements is prohibited without prior written authorization."
+      "content": "All content on this website (texts, images, videos, logos, trademarks, graphic elements) is the exclusive property of V2A Group or its partners and is protected by French and international intellectual property laws. Any reproduction, representation, modification, publication or adaptation of all or part of the website elements is prohibited without prior written authorization."
     },
     "liability": {
       "title": "Liability",
-      "content": "Groupe V2A strives to ensure the accuracy and updating of information on the website. However, it does not guarantee the completeness or accuracy of the information and reserves the right to modify content at any time without notice. Use of information available on the website is at the user's sole responsibility."
+      "content": "V2A Group strives to ensure the accuracy and updating of information on the website. However, it does not guarantee the completeness or accuracy of the information and reserves the right to modify content at any time without notice. Use of information available on the website is at the user's sole responsibility."
     },
     "data": {
       "title": "Personal Data",
@@ -344,7 +344,7 @@
     "sections": {
       "controller": {
         "title": "1. Data Controller Identity",
-        "content": "Groupe V2A SAS, with registered office at 8 Ruelle Boulot, 97400 Saint-Denis, Réunion Island, registered with the RCS of Saint-Denis under number 101 033 694, is responsible for the processing of personal data collected on the website www.v2agroup.com.\n\nContact: contact@v2agroup.com"
+        "content": "V2A Group SAS, with registered office at 8 Ruelle Boulot, 97400 Saint-Denis, Réunion Island, registered with the RCS of Saint-Denis under number 101 033 694, is responsible for the processing of personal data collected on the website www.v2agroup.com.\n\nContact: contact@v2agroup.com"
       },
       "collection": {
         "title": "2. Data Collected",
@@ -356,7 +356,7 @@
       },
       "legalBasis": {
         "title": "4. Legal Basis",
-        "content": "Data processing is based on user consent (contact form), the legitimate interest of Groupe V2A (statistics, website improvement), and the execution of pre-contractual measures (information requests about opportunities)."
+        "content": "Data processing is based on user consent (contact form), the legitimate interest of V2A Group (statistics, website improvement), and the execution of pre-contractual measures (information requests about opportunities)."
       },
       "retention": {
         "title": "5. Data Retention",
@@ -364,15 +364,15 @@
       },
       "recipients": {
         "title": "6. Data Recipients",
-        "content": "The data collected is intended exclusively for Groupe V2A's internal teams. It is never sold, transferred or rented to third parties. It may be communicated to technical subcontractors (hosting provider, email service provider) in strict compliance with regulations and under contractual confidentiality guarantees."
+        "content": "The data collected is intended exclusively for V2A Group's internal teams. It is never sold, transferred or rented to third parties. It may be communicated to technical subcontractors (hosting provider, email service provider) in strict compliance with regulations and under contractual confidentiality guarantees."
       },
       "transfers": {
         "title": "7. Transfers Outside the EU",
-        "content": "When using service providers located outside the European Union, Groupe V2A ensures that appropriate safeguards are in place (European Commission standard contractual clauses or adequacy decision)."
+        "content": "When using service providers located outside the European Union, V2A Group ensures that appropriate safeguards are in place (European Commission standard contractual clauses or adequacy decision)."
       },
       "rights": {
         "title": "8. User Rights",
-        "content": "Under the GDPR, each user has the right to access, rectification, deletion, restriction of processing, data portability and objection to processing. These rights may be exercised by email at contact@v2agroup.com or by mail to the registered office. Groupe V2A commits to responding to any request within a maximum of 30 days. In case of disagreement, the user may file a complaint with the CNIL (French Data Protection Authority)."
+        "content": "Under the GDPR, each user has the right to access, rectification, deletion, restriction of processing, data portability and objection to processing. These rights may be exercised by email at contact@v2agroup.com or by mail to the registered office. V2A Group commits to responding to any request within a maximum of 30 days. In case of disagreement, the user may file a complaint with the CNIL (French Data Protection Authority)."
       },
       "cookies": {
         "title": "9. Cookies",
@@ -380,7 +380,7 @@
       },
       "security": {
         "title": "10. Security",
-        "content": "Groupe V2A implements appropriate technical and organizational measures to protect personal data against unauthorized access, modification, disclosure or destruction. The website is secured by HTTPS protocol."
+        "content": "V2A Group implements appropriate technical and organizational measures to protect personal data against unauthorized access, modification, disclosure or destruction. The website is secured by HTTPS protocol."
       },
       "changes": {
         "title": "11. Changes",
@@ -401,6 +401,6 @@
     "navigation": "Navigation",
     "legal": "Legal Information",
     "contact": "Contact",
-    "rights": "© 2026 Groupe V2A SAS — All rights reserved"
+    "rights": "© 2026 V2A Group SAS — All rights reserved"
   }
 }

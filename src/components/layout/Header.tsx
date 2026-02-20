@@ -85,7 +85,7 @@ export function Header() {
         <Link
           href="/"
           className="group relative flex items-center gap-2"
-          aria-label="Groupe V2A — Accueil"
+          aria-label="V2A Group — Accueil"
         >
           <span className="relative text-2xl font-bold tracking-[0.15em] text-noir transition-colors duration-300">
             V2A

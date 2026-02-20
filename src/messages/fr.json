@@ -238,7 +238,7 @@
       "description": "Projets, destinations et opportunités qui illustrent le champ d'action de V2A Group."
     },
     "pageTitle": "Notre univers",
-    "pageSubtitle": "Projets, destinations et opportunités qui illustrent le champ d'action du Groupe V2A.",
+    "pageSubtitle": "Projets, destinations et opportunités qui illustrent le champ d'action de V2A Group.",
     "filters": {
       "all": "Tous"
     },
@@ -314,7 +314,7 @@
     "pageTitle": "Mentions légales",
     "editor": {
       "title": "Éditeur du site",
-      "content": "Groupe V2A SAS\nSiège social : 8 Ruelle Boulot, 97400 Saint-Denis, La Réunion\nRCS Saint-Denis de La Réunion : 101 033 694\nÉtablissement secondaire : 63, Happtstrooss, L-9780 Wincrange, Luxembourg\nTéléphone : +32 475 29 23 38 / +262 693 659 589\nEmail : contact@v2agroup.com\nDirecteur de la publication : Valère Duchenne, Associé gérant"
+      "content": "V2A Group SAS\nSiège social : 8 Ruelle Boulot, 97400 Saint-Denis, La Réunion\nRCS Saint-Denis de La Réunion : 101 033 694\nÉtablissement secondaire : 63, Happtstrooss, L-9780 Wincrange, Luxembourg\nTéléphone : +32 475 29 23 38 / +262 693 659 589\nEmail : contact@v2agroup.com\nDirecteur de la publication : Valère Duchenne, Associé gérant"
     },
     "hosting": {
       "title": "Hébergement",
@@ -322,11 +322,11 @@
     },
     "ip": {
       "title": "Propriété intellectuelle",
-      "content": "L'ensemble du contenu du site (textes, images, vidéos, logos, marques, éléments graphiques) est la propriété exclusive du Groupe V2A ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est interdite sans autorisation écrite préalable."
+      "content": "L'ensemble du contenu du site (textes, images, vidéos, logos, marques, éléments graphiques) est la propriété exclusive de V2A Group ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est interdite sans autorisation écrite préalable."
     },
     "liability": {
       "title": "Responsabilité",
-      "content": "Le Groupe V2A s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, il ne garantit pas l'exhaustivité ni l'exactitude des informations et se réserve le droit de modifier le contenu à tout moment et sans préavis. L'utilisation des informations disponibles sur le site se fait sous la responsabilité exclusive de l'utilisateur."
+      "content": "V2A Group s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur le site. Toutefois, il ne garantit pas l'exhaustivité ni l'exactitude des informations et se réserve le droit de modifier le contenu à tout moment et sans préavis. L'utilisation des informations disponibles sur le site se fait sous la responsabilité exclusive de l'utilisateur."
     },
     "data": {
       "title": "Données personnelles",
@@ -344,7 +344,7 @@
     "sections": {
       "controller": {
         "title": "1. Identité du responsable de traitement",
-        "content": "Groupe V2A SAS, dont le siège social est situé au 8 Ruelle Boulot, 97400 Saint-Denis, La Réunion, immatriculée au RCS de Saint-Denis sous le numéro 101 033 694, est responsable du traitement des données personnelles collectées sur le site www.v2agroup.com.\n\nContact : contact@v2agroup.com"
+        "content": "V2A Group SAS, dont le siège social est situé au 8 Ruelle Boulot, 97400 Saint-Denis, La Réunion, immatriculée au RCS de Saint-Denis sous le numéro 101 033 694, est responsable du traitement des données personnelles collectées sur le site www.v2agroup.com.\n\nContact : contact@v2agroup.com"
       },
       "collection": {
         "title": "2. Données collectées",
@@ -356,7 +356,7 @@
       },
       "legalBasis": {
         "title": "4. Base légale",
-        "content": "Le traitement des données repose sur le consentement de l'utilisateur (formulaire de contact), l'intérêt légitime du Groupe V2A (statistiques, amélioration du site), et l'exécution de mesures précontractuelles (demandes d'information sur les opportunités)."
+        "content": "Le traitement des données repose sur le consentement de l'utilisateur (formulaire de contact), l'intérêt légitime de V2A Group (statistiques, amélioration du site), et l'exécution de mesures précontractuelles (demandes d'information sur les opportunités)."
       },
       "retention": {
         "title": "5. Durée de conservation",
@@ -364,15 +364,15 @@
       },
       "recipients": {
         "title": "6. Destinataires des données",
-        "content": "Les données collectées sont destinées exclusivement aux équipes internes du Groupe V2A. Elles ne sont jamais cédées, vendues ou louées à des tiers. Elles peuvent être communiquées à des sous-traitants techniques (hébergeur, prestataire email) dans le strict respect de la réglementation et sous couvert de garanties contractuelles de confidentialité."
+        "content": "Les données collectées sont destinées exclusivement aux équipes internes de V2A Group. Elles ne sont jamais cédées, vendues ou louées à des tiers. Elles peuvent être communiquées à des sous-traitants techniques (hébergeur, prestataire email) dans le strict respect de la réglementation et sous couvert de garanties contractuelles de confidentialité."
       },
       "transfers": {
         "title": "7. Transferts hors UE",
-        "content": "En cas de recours à des prestataires situés hors de l'Union européenne, le Groupe V2A s'assure que des garanties appropriées sont mises en place (clauses contractuelles types de la Commission européenne, ou décision d'adéquation)."
+        "content": "En cas de recours à des prestataires situés hors de l'Union européenne, V2A Group s'assure que des garanties appropriées sont mises en place (clauses contractuelles types de la Commission européenne, ou décision d'adéquation)."
       },
       "rights": {
         "title": "8. Droits des utilisateurs",
-        "content": "Conformément au RGPD, chaque utilisateur dispose d'un droit d'accès, de rectification, de suppression, de limitation du traitement, de portabilité de ses données et d'opposition au traitement. Ces droits peuvent être exercés par email à contact@v2agroup.com ou par courrier au siège social. Le Groupe V2A s'engage à répondre à toute demande dans un délai maximum de 30 jours. En cas de désaccord, l'utilisateur peut introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés)."
+        "content": "Conformément au RGPD, chaque utilisateur dispose d'un droit d'accès, de rectification, de suppression, de limitation du traitement, de portabilité de ses données et d'opposition au traitement. Ces droits peuvent être exercés par email à contact@v2agroup.com ou par courrier au siège social. V2A Group s'engage à répondre à toute demande dans un délai maximum de 30 jours. En cas de désaccord, l'utilisateur peut introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés)."
       },
       "cookies": {
         "title": "9. Cookies",
@@ -380,7 +380,7 @@
       },
       "security": {
         "title": "10. Sécurité",
-        "content": "Le Groupe V2A met en œuvre les mesures techniques et organisationnelles appropriées pour protéger les données personnelles contre tout accès non autorisé, modification, divulgation ou destruction. Le site est sécurisé par protocole HTTPS."
+        "content": "V2A Group met en œuvre les mesures techniques et organisationnelles appropriées pour protéger les données personnelles contre tout accès non autorisé, modification, divulgation ou destruction. Le site est sécurisé par protocole HTTPS."
       },
       "changes": {
         "title": "11. Modifications",
@@ -401,6 +401,6 @@
     "navigation": "Navigation",
     "legal": "Informations légales",
     "contact": "Contact",
-    "rights": "© 2026 Groupe V2A SAS — Tous droits réservés"
+    "rights": "© 2026 V2A Group SAS — Tous droits réservés"
   }
 }
