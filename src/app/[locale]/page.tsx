@@ -22,6 +22,7 @@ const EXPERTISE_SECTORS = [
   { key: "hospitality", image: "/images/sectors/carte-hotellerie.webp" },
   { key: "realEstate", image: "/images/sectors/carte-promotion-immobiliere.webp" },
   { key: "energy", image: "/images/sectors/carte-energies-renouvelables.webp" },
+  { key: "dataCenters", image: "/images/sectors/carte-data-centers.webp" },
   { key: "fundraising", image: "/images/sectors/carte-levee-de-fonds.webp" },
   { key: "assets", image: "/images/sectors/carte-actifs-diversifies.webp" },
 ] as const;
@@ -82,7 +83,7 @@ export default async function HomePage({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
             {EXPERTISE_SECTORS.map((sector, i) => (
-              <div key={sector.key} className={`lg:col-span-2 ${i === 3 ? "lg:col-start-2" : ""}`}>
+              <div key={sector.key} className="lg:col-span-2">
               <AnimateOnScroll delay={i * 100} variant="scaleIn">
                 <Link
                   href="/expertises"

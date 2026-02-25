@@ -40,6 +40,12 @@ const SECTORS = [
     expandedImage: "/images/sectors/developpe-energies-renouvelables.webp",
   },
   {
+    key: "dataCenters",
+    iconName: "Server" as const,
+    image: "/images/sectors/carte-data-centers.webp",
+    expandedImage: "/images/sectors/developpe-data-centers.webp",
+  },
+  {
     key: "fundraising",
     iconName: "TrendingUp" as const,
     image: "/images/sectors/carte-levee-de-fonds.webp",

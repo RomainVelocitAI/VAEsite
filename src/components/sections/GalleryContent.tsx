@@ -13,14 +13,15 @@ interface GalleryItem {
 }
 
 const GALLERY_ITEMS: GalleryItem[] = [
-  { id: "1", src: "/images/gallery/la-reunion.webp", caption: "La Réunion — Océan Indien" },
-  { id: "2", src: "/images/gallery/dubai.webp", caption: "Dubaï — Moyen-Orient" },
-  { id: "3", src: "/images/gallery/maurice.webp", caption: "Maurice — Océan Indien" },
-  { id: "4", src: "/images/gallery/luxembourg.webp", caption: "Luxembourg" },
+  { id: "1", src: "/images/gallery/maurice.webp", caption: "Océan Indien — La Réunion, L'île Maurice, Madagascar..." },
+  { id: "2", src: "/images/gallery/dubai.webp", caption: "Moyen-Orient — Bahreïn, Dubaï..." },
+  { id: "3", src: "/images/gallery/afrique.webp", caption: "Afrique — Afrique du Sud, Maroc..." },
+  { id: "4", src: "/images/gallery/luxembourg.webp", caption: "Europe" },
   { id: "5", src: "/images/gallery/mexique.webp", caption: "Mexique" },
   { id: "6", src: "/images/gallery/concept-hotelier.webp", caption: "Concepts d'hébergements premium" },
-  { id: "7", src: "/images/gallery/construction-premium.webp", caption: "Construction premium — Matériaux innovants" },
+  { id: "7", src: "/images/gallery/construction-premium.webp", caption: "Construction haut de gamme — Matériaux d'excellence" },
   { id: "8", src: "/images/gallery/matieres-premieres.webp", caption: "Actifs stratégiques — Matières premières" },
+  { id: "9", src: "/images/gallery/levee-capitaux.webp", caption: "Structuration et levée de capitaux ciblée" },
 ];
 
 export function GalleryContent() {

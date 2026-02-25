@@ -61,6 +61,10 @@
         "title": "Fundraising",
         "description": "Research and support for your financing needs."
       },
+      "dataCenters": {
+        "title": "Data Centers",
+        "description": "Research and support in the development of next-generation data centers, serving digital sovereignty."
+      },
       "assets": {
         "title": "Diversified Assets",
         "description": "Support for high-potential strategic asset classes: commodities, minerals, precious metals, hydrocarbons and other resources with attractive risk/return profiles."
@@ -151,8 +155,10 @@
       },
       "confidentiality": {
         "title": "Confidentiality",
-        "description": "Discretion is a fundamental commitment of V2A Group. Rigorous internal verification and control processes ensure the absolute protection of information related to our clients, partners and transactions. Every piece of data is subject to strict confidentiality protocols, providing our entire ecosystem with an impeccable framework of trust."
-      }
+        "description": "Discretion is a fundamental commitment of V2A Group.",
+        "descriptionFull": "Rigorous internal verification and control processes ensure the absolute protection of information related to our clients, partners and transactions. Every piece of data is subject to strict confidentiality protocols, providing our entire ecosystem with an impeccable framework of trust."
+      },
+      "importantButton": "IMPORTANT"
     }
   },
   "expertises": {
@@ -183,8 +189,15 @@
         "title": "Renewable Energy",
         "type": "Research and support",
         "summary": "Research and support for sustainable energy projects.",
-        "expanded": "Development and structuring of solar photovoltaic farm projects, in partnership with specialized operators. These assets offer stable and secured long-term returns, in a high-growth sector driven by energy transition policies.",
+        "expanded": "Development and structuring of renewable energy projects: photovoltaic solar farms and hydroelectric dams, in partnership with specialized operators. These assets offer stable and secured long-term returns.",
         "highlights": ["High-potential project identification", "Technical and financial due diligence", "Investment structuring", "Investor-developer matchmaking"]
+      },
+      "dataCenters": {
+        "title": "Data Centers",
+        "type": "Research and support",
+        "summary": "Development and deployment of next-generation data centers, secure high-availability infrastructure integrating high-performance energy standards.",
+        "expanded": "Development and deployment of next-generation data centers, secure high-availability infrastructure integrating high-performance energy standards and technology solutions tailored to the challenges of digital sovereignty and business continuity. V2A supports its clients in identifying, structuring and financing these strategic digital infrastructure projects.",
+        "highlights": ["Identification of high strategic potential projects", "Technical and financial due diligence", "Investment structuring", "Investor-specialized operator matchmaking"]
       },
       "fundraising": {
         "title": "Fundraising",
@@ -401,6 +414,8 @@
     "navigation": "Navigation",
     "legal": "Legal Information",
     "contact": "Contact",
+    "locationFrance": "France",
+    "locationLuxembourg": "Luxembourg",
     "rights": "© 2026 V2A Group SAS — All rights reserved"
   }
 }

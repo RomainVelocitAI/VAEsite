@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { ChevronDown, Hotel, Building2, Zap, TrendingUp, Briefcase } from "lucide-react";
+import { ChevronDown, Hotel, Building2, Zap, Server, TrendingUp, Briefcase } from "lucide-react";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 const ICON_MAP = {
   Hotel,
   Building2,
   Zap,
+  Server,
   TrendingUp,
   Briefcase,
 } as const;

@@ -61,6 +61,10 @@
         "title": "Levée de Fonds",
         "description": "Recherche et accompagnement pour vos besoins en financement."
       },
+      "dataCenters": {
+        "title": "Data Centers",
+        "description": "Recherche et accompagnement dans le développement de data centers nouvelle génération, au service de la souveraineté numérique."
+      },
       "assets": {
         "title": "Actifs Diversifiés",
         "description": "Accompagnement sur des classes d'actifs stratégiques à fort potentiel : matières premières, minerais, métaux précieux, hydrocarbures et autres ressources à profil rendement/risque attractif."
@@ -151,8 +155,10 @@
       },
       "confidentiality": {
         "title": "Confidentialité",
-        "description": "La discrétion constitue un engagement fondamental de V2A Group. Des process internes rigoureux de vérification et de contrôle garantissent la protection absolue des informations relatives à nos clients, à nos partenaires et aux opérations traitées. Chaque donnée est soumise à des protocoles stricts de confidentialité, assurant à l'ensemble de notre écosystème un cadre de confiance irréprochable."
-      }
+        "description": "La discrétion constitue un engagement fondamental de V2A Group.",
+        "descriptionFull": "Des process internes rigoureux de vérification et de contrôle garantissent la protection absolue des informations relatives à nos clients, à nos partenaires et aux opérations traitées. Chaque donnée est soumise à des protocoles stricts de confidentialité, assurant à l'ensemble de notre écosystème un cadre de confiance irréprochable."
+      },
+      "importantButton": "IMPORTANT"
     }
   },
   "expertises": {
@@ -183,8 +189,15 @@
         "title": "Énergies Renouvelables",
         "type": "Recherche et accompagnement",
         "summary": "Recherche et accompagnement dans les projets énergétiques durables.",
-        "expanded": "Développement et structuration de projets de fermes solaires photovoltaïques, en partenariat avec des opérateurs spécialisés. Ces actifs offrent des rendements stables et sécurisés sur le long terme, dans un secteur en forte croissance porté par les politiques de transition énergétique.",
+        "expanded": "Développement et structuration de projets d'énergies renouvelables : fermes solaires photovoltaïques et barrages hydroélectriques, en partenariat avec des opérateurs spécialisés. Ces actifs offrent des rendements stables et sécurisés sur le long terme.",
         "highlights": ["Identification de projets à fort potentiel", "Due diligence technique et financière", "Structuration des investissements", "Mise en relation investisseurs-porteurs de projets"]
+      },
+      "dataCenters": {
+        "title": "Data Centers",
+        "type": "Recherche et accompagnement",
+        "summary": "Développement et mise en œuvre de data centers de nouvelle génération, infrastructures sécurisées à haute disponibilité, intégrant des standards énergétiques performants.",
+        "expanded": "Développement et mise en œuvre de data centers de nouvelle génération, infrastructures sécurisées à haute disponibilité, intégrant des standards énergétiques performants et des solutions technologiques adaptées aux enjeux de souveraineté numérique et de continuité d'activité. V2A accompagne ses clients dans l'identification, la structuration et le financement de ces projets d'infrastructure digitale stratégique.",
+        "highlights": ["Identification de projets à fort potentiel stratégique", "Due diligence technique et financière", "Structuration des investissements", "Mise en relation investisseurs-opérateurs spécialisés"]
       },
       "fundraising": {
         "title": "Levée de Fonds",
@@ -401,6 +414,8 @@
     "navigation": "Navigation",
     "legal": "Informations légales",
     "contact": "Contact",
+    "locationFrance": "France",
+    "locationLuxembourg": "Luxembourg",
     "rights": "© 2026 V2A Group SAS — Tous droits réservés"
   }
 }

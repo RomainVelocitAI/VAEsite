@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { Shield, Eye, Handshake, Lock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { TeamMemberCard } from "@/components/sections/TeamMemberCard";
+import { ValuesSection } from "@/components/sections/ValuesSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 
 export async function generateMetadata({
@@ -28,12 +28,6 @@ const TEAM_MEMBERS = [
   { key: "angelo", image: "/images/team/angelo.webp" },
 ] as const;
 
-const VALUES = [
-  { key: "selectivity", Icon: Shield },
-  { key: "transparency", Icon: Eye },
-  { key: "alignment", Icon: Handshake },
-  { key: "confidentiality", Icon: Lock },
-] as const;
 
 export default async function AboutPage({
   params,
@@ -153,25 +147,7 @@ export default async function AboutPage({
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {VALUES.map((value, i) => (
-              <AnimateOnScroll key={value.key} delay={i * 120} variant="scaleIn">
-                <div className="group p-8 border border-blanc/10 bg-blanc/[0.04] backdrop-blur-sm hover:border-or/40 hover:bg-blanc/[0.08] transition-all duration-500 border-t-2 border-t-or/30 hover:border-t-or">
-                  <value.Icon
-                    size={24}
-                    strokeWidth={1.2}
-                    className="text-or mb-5 transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <h3 className="text-[18px] font-bold text-blanc mb-3">
-                    {t(`values.${value.key}.title`)}
-                  </h3>
-                  <p className="text-[14px] text-blanc/50 leading-relaxed group-hover:text-blanc/70 transition-colors duration-500">
-                    {t(`values.${value.key}.description`)}
-                  </p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
+          <ValuesSection />
         </Container>
       </section>
 

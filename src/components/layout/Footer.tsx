@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -94,28 +94,11 @@ export function Footer() {
                 <MapPin size={14} className="text-or mt-0.5 shrink-0" strokeWidth={1.5} />
                 <div className="space-y-1">
                   <span className="block text-[15px] text-blanc/50 tracking-wide">
-                    {tContact("addressReunion")}
+                    {t("locationFrance")}
                   </span>
                   <span className="block text-[15px] text-blanc/50 tracking-wide">
-                    {tContact("addressLuxembourg")}
+                    {t("locationLuxembourg")}
                   </span>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone size={14} className="text-or mt-0.5 shrink-0" strokeWidth={1.5} />
-                <div className="space-y-1">
-                  <a
-                    href="tel:+32475292338"
-                    className="block text-[15px] text-blanc/50 hover:text-or transition-colors duration-300 tracking-wide"
-                  >
-                    {tContact("phoneOne")}
-                  </a>
-                  <a
-                    href="tel:+262693659589"
-                    className="block text-[15px] text-blanc/50 hover:text-or transition-colors duration-300 tracking-wide"
-                  >
-                    {tContact("phoneTwo")}
-                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
