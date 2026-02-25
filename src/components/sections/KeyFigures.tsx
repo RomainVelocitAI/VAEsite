@@ -33,7 +33,7 @@ function useCounter({ end, duration = 2000 }: CounterProps) {
 }
 
 const FIGURES = [
-  { key: "experience", end: 45, suffix: "+", label: "experience" },
+  { key: "experience", end: 50, suffix: "+", label: "experience" },
   { key: "continents", end: 5, suffix: "", label: "continents" },
   { key: "collaborators", end: 10, suffix: "", label: "collaborators" },
   { key: "zones", end: 6, suffix: "", label: "zones" },
