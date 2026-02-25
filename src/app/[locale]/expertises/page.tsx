@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { getAlternates } from "@/lib/seo";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { ExpertiseSectorDetail } from "@/components/sections/ExpertiseSectorDetail";
@@ -17,6 +19,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: getAlternates("/expertises", locale),
   };
 }
 
@@ -80,6 +83,8 @@ export default async function ExpertisesPage({
 
   return (
     <>
+      <Breadcrumb internalPath="/expertises" locale={locale} />
+
       {/* Hero with background image */}
       <section className="relative h-[50vh] min-h-[360px] max-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

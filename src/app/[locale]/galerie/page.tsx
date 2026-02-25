@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { getAlternates } from "@/lib/seo";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { GalleryContent } from "@/components/sections/GalleryContent";
 import { CtaBand } from "@/components/sections/CtaBand";
@@ -15,6 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: getAlternates("/galerie", locale),
   };
 }
 
@@ -30,6 +33,7 @@ export default async function GalleryPage({
 
   return (
     <>
+      <Breadcrumb internalPath="/galerie" locale={locale} />
       <PageHeader title={t("pageTitle")} subtitle={t("pageSubtitle")} />
       <GalleryContent />
 

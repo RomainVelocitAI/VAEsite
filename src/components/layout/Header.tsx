@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 function FlagFR({ className }: { className?: string }) {
   return (
@@ -84,17 +85,19 @@ export function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="group relative flex items-center gap-2"
+          className="group relative flex items-center"
           aria-label="V2A Group — Accueil"
         >
-          <span className="relative text-2xl font-bold tracking-[0.15em] text-noir transition-colors duration-300">
-            V2A
-            <span className="absolute -bottom-1 left-0 h-[2px] w-full bg-or origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100" />
-          </span>
-          <span className="hidden sm:block w-[1px] h-5 bg-or/40 mx-1" />
-          <span className="hidden sm:block text-[10px] font-normal tracking-[0.25em] uppercase text-texte/60 leading-tight">
-            Group
-          </span>
+          <Image
+            src="/images/logo-v2a-horizontal.webp"
+            alt="V2A Group — Vision to Action"
+            width={993}
+            height={240}
+            className={`w-auto transition-all duration-500 ease-out ${
+              isScrolled ? "h-8" : "h-9 md:h-10"
+            }`}
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

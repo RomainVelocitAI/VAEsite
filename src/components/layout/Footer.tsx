@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { MapPin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -19,19 +20,14 @@ export function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <span className="text-2xl font-bold tracking-[0.15em] text-blanc">
-                V2A
-              </span>
-              <span className="ml-2 text-[10px] tracking-[0.25em] uppercase text-blanc/40">
-                Group
-              </span>
+              <Image
+                src="/images/logo-v2a-horizontal-white.webp"
+                alt="V2A Group — Vision to Action"
+                width={993}
+                height={240}
+                className="h-10 w-auto"
+              />
             </div>
-            <p className="text-or text-sm font-bold tracking-[0.08em]">
-              {t("slogan")}
-            </p>
-            <p className="mt-1 text-[15px] italic font-accent text-blanc/40">
-              {t("sloganSub")}
-            </p>
           </div>
 
           {/* Navigation */}

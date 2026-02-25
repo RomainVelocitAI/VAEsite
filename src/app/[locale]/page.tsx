@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Clock, Globe, ArrowRight, Users, Shield, Eye, Handshake, Lock } from "lucide-react";
+import { getAlternates } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
 import { KeyFigures } from "@/components/sections/KeyFigures";
 import { Container } from "@/components/ui/Container";
@@ -10,6 +12,20 @@ import { Button } from "@/components/ui/Button";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { Link } from "@/i18n/navigation";
 import { CtaBand } from "@/components/sections/CtaBand";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: getAlternates("/", locale),
+  };
+}
 
 const VALUE_PROPS = [
   { key: "experience", Icon: Clock },

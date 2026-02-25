@@ -60,9 +60,14 @@ export function Hero() {
           }`}
           style={{ transitionDelay: "500ms" }}
         >
-          <span className="inline-block text-[13px] font-bold tracking-[0.5em] text-or/80 uppercase">
-            Group
-          </span>
+          <Image
+            src="/images/logo-v2a-icon-white.png"
+            alt="V2A"
+            width={823}
+            height={311}
+            className="h-12 md:h-16 w-auto mx-auto"
+            priority
+          />
         </div>
 
         {/* Main title */}

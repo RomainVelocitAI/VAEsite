@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { getAlternates } from "@/lib/seo";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
@@ -15,6 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: getAlternates("/mentions-legales", locale),
   };
 }
 
@@ -32,6 +35,7 @@ export default async function LegalNoticePage({
 
   return (
     <>
+      <Breadcrumb internalPath="/mentions-legales" locale={locale} />
       <PageHeader title={t("pageTitle")} />
 
       <section className="section-diagonal-top bg-blanc py-20 md:py-28">

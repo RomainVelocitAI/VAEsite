@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { getAlternates, getOpenGraph, getTwitterCard, BASE_URL } from "@/lib/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
@@ -12,27 +13,29 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "V2A Group — Conseil & Intermédiation en Investissements Stratégiques",
-  description:
-    "V2A Group accompagne investisseurs institutionnels et privés dans leurs projets stratégiques : immobilier, hôtellerie, énergies renouvelables, levée de fonds et actifs diversifiés.",
-  openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    siteName: "V2A Group",
-    title: "V2A Group — Conseil & Intermédiation en Investissements Stratégiques",
-    description:
-      "V2A Group accompagne investisseurs institutionnels et privés dans leurs projets stratégiques.",
-    images: [
-      {
-        url: "/images/og/open-graph.webp",
-        width: 1200,
-        height: 630,
-        alt: "V2A Group — Connecting Capital, Creating Impact",
-      },
-    ],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  const title = t("title");
+  const description = t("description");
+
+  return {
+    title: {
+      default: title,
+      template: `%s | V2A Group`,
+    },
+    description,
+    metadataBase: new URL(BASE_URL),
+    alternates: getAlternates("/", locale),
+    openGraph: getOpenGraph(locale, title, description),
+    twitter: getTwitterCard(title, description),
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -50,26 +53,95 @@ export default async function LocaleLayout({
     "@type": "Organization",
     name: "V2A Group",
     url: "https://v2agroup.com",
-    logo: "https://v2agroup.com/images/logo-v2a.svg",
+    logo: "https://v2agroup.com/images/logo-v2a.png",
+    image: "https://v2agroup.com/images/og/open-graph.webp",
     description:
-      "Société de conseil et d'intermédiation en investissements stratégiques",
+      locale === "fr"
+        ? "Société de conseil et d'intermédiation en investissements stratégiques"
+        : "Strategic investment advisory and intermediation firm",
+    foundingDate: "2024",
     address: [
       {
         "@type": "PostalAddress",
         streetAddress: "8, Ruelle Boulot",
-        addressLocality: "La Réunion",
+        postalCode: "97400",
+        addressLocality: "Saint-Denis",
+        addressRegion: "La Réunion",
         addressCountry: "FR",
       },
       {
         "@type": "PostalAddress",
-        addressLocality: "Luxembourg",
+        streetAddress: "63, Happtstrooss",
+        postalCode: "L-9780",
+        addressLocality: "Wincrange",
         addressCountry: "LU",
       },
     ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+32475292338",
+      email: "contact@v2agroup.com",
+      contactType: "customer service",
+      availableLanguage: ["French", "English"],
+    },
     telephone: ["+32475292338", "+262693659589"],
     email: "contact@v2agroup.com",
     sameAs: [],
   };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "V2A Group",
+    url: "https://v2agroup.com",
+    inLanguage: locale === "fr" ? "fr-FR" : "en-US",
+  };
+
+  const localBusinessJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://v2agroup.com/#reunion",
+      name: "V2A Group — La Réunion",
+      image: "https://v2agroup.com/images/og/open-graph.webp",
+      url: "https://v2agroup.com",
+      telephone: "+262693659589",
+      email: "contact@v2agroup.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "8, Ruelle Boulot",
+        postalCode: "97400",
+        addressLocality: "Saint-Denis",
+        addressRegion: "La Réunion",
+        addressCountry: "FR",
+      },
+      parentOrganization: {
+        "@type": "Organization",
+        name: "V2A Group",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://v2agroup.com/#luxembourg",
+      name: "V2A Group — Luxembourg",
+      image: "https://v2agroup.com/images/og/open-graph.webp",
+      url: "https://v2agroup.com",
+      telephone: "+32475292338",
+      email: "contact@v2agroup.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "63, Happtstrooss",
+        postalCode: "L-9780",
+        addressLocality: "Wincrange",
+        addressCountry: "LU",
+      },
+      parentOrganization: {
+        "@type": "Organization",
+        name: "V2A Group",
+      },
+    },
+  ];
 
   return (
     <html lang={locale} className="scroll-smooth">
@@ -80,6 +152,21 @@ export default async function LocaleLayout({
             __html: JSON.stringify(organizationJsonLd),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd),
+          }}
+        />
+        {localBusinessJsonLd.map((lb, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(lb),
+            }}
+          />
+        ))}
       </head>
       <body className="bg-creme text-texte antialiased">
         <NextIntlClientProvider messages={messages}>
