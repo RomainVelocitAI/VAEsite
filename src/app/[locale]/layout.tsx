@@ -52,9 +52,9 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "V2A Group",
-    url: "https://v2agroup.com",
-    logo: "https://v2agroup.com/images/logo-v2a.png",
-    image: "https://v2agroup.com/images/og/open-graph.webp",
+    url: BASE_URL,
+    logo: `${BASE_URL}/images/logo-v2a.png`,
+    image: `${BASE_URL}/images/og/open-graph.webp`,
     description:
       locale === "fr"
         ? "Société de conseil et d'intermédiation en investissements stratégiques"
@@ -93,7 +93,7 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "V2A Group",
-    url: "https://v2agroup.com",
+    url: BASE_URL,
     inLanguage: locale === "fr" ? "fr-FR" : "en-US",
   };
 
@@ -101,10 +101,10 @@ export default async function LocaleLayout({
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "@id": "https://v2agroup.com/#reunion",
+      "@id": `${BASE_URL}/#reunion`,
       name: "V2A Group — La Réunion",
-      image: "https://v2agroup.com/images/og/open-graph.webp",
-      url: "https://v2agroup.com",
+      image: `${BASE_URL}/images/og/open-graph.webp`,
+      url: BASE_URL,
       telephone: "+262693659589",
       email: "contact@v2agroup.com",
       address: {
@@ -123,10 +123,10 @@ export default async function LocaleLayout({
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "@id": "https://v2agroup.com/#luxembourg",
+      "@id": `${BASE_URL}/#luxembourg`,
       name: "V2A Group — Luxembourg",
-      image: "https://v2agroup.com/images/og/open-graph.webp",
-      url: "https://v2agroup.com",
+      image: `${BASE_URL}/images/og/open-graph.webp`,
+      url: BASE_URL,
       telephone: "+32475292338",
       email: "contact@v2agroup.com",
       address: {
