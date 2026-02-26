@@ -11,12 +11,12 @@ export function Footer() {
   const tContact = useTranslations("contact.info");
 
   return (
-    <footer className="bg-noir text-blanc/80" role="contentinfo">
+    <footer className="bg-noir text-blanc/80 overflow-hidden" role="contentinfo">
       {/* Gold accent line */}
       <div className="h-[2px] bg-gradient-to-r from-transparent via-or to-transparent" />
 
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-8">
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-6">

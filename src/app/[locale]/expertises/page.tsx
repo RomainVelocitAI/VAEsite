@@ -86,7 +86,7 @@ export default async function ExpertisesPage({
       <Breadcrumb internalPath="/expertises" locale={locale} />
 
       {/* Hero with background image */}
-      <section className="relative h-[50vh] min-h-[360px] max-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[45vh] md:h-[50vh] min-h-[300px] max-h-[450px] sm:max-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/hero/page-expertises.webp"
@@ -101,7 +101,7 @@ export default async function ExpertisesPage({
         </div>
         <Container className="relative z-10">
           <div className="text-center">
-            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-blanc tracking-tight">
+            <h1 className="text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
               {t("pageTitle")}
             </h1>
             <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />

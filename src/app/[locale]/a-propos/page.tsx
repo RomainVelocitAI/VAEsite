@@ -47,7 +47,7 @@ export default async function AboutPage({
       <Breadcrumb internalPath="/a-propos" locale={locale} />
 
       {/* Hero with background image */}
-      <section className="relative h-[50vh] min-h-[360px] max-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[45vh] md:h-[50vh] min-h-[300px] max-h-[450px] sm:max-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/hero/page-a-propos.webp"
@@ -62,7 +62,7 @@ export default async function AboutPage({
         </div>
         <Container className="relative z-10">
           <div className="text-center">
-            <h1 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-blanc tracking-tight">
+            <h1 className="text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
               {t("vision.sectionTitle")}
             </h1>
             <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
@@ -73,7 +73,7 @@ export default async function AboutPage({
       {/* Vision & Mission */}
       <section className="section-diagonal-top bg-creme py-20 md:py-28">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-start">
             <AnimateOnScroll variant="fadeLeft">
               <div>
                 <p className="text-base md:text-lg text-texte leading-relaxed mb-8">
@@ -116,7 +116,7 @@ export default async function AboutPage({
         <Container>
           <SectionTitle title={t("team.sectionTitle")} />
 
-          <div className="space-y-20 md:space-y-28">
+          <div className="space-y-14 sm:space-y-20 md:space-y-28">
             {TEAM_MEMBERS.map((member, i) => (
               <TeamMemberCard
                 key={member.key}
@@ -145,7 +145,7 @@ export default async function AboutPage({
         <Container className="relative z-10">
           <AnimateOnScroll variant="scaleIn">
             <div className="text-center mb-14">
-              <h2 className="text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
+              <h2 className="text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
                 {t("values.sectionTitle")}
               </h2>
               <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />

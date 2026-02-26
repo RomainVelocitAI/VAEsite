@@ -208,7 +208,7 @@ export function Header() {
             isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex flex-col justify-center h-full px-10 py-20">
+          <div className="flex flex-col justify-center h-full px-6 sm:px-10 py-16 sm:py-20 overflow-hidden">
             <nav className="flex flex-col gap-1" aria-label="Menu mobile">
               {NAV_ITEMS.map((item, i) => (
                 <Link
@@ -252,7 +252,7 @@ export function Header() {
               <Link
                 href="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center w-full py-4 bg-or text-noir text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#b8984f]"
+                className="inline-flex items-center justify-center w-full py-5 bg-or text-noir text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#b8984f]"
               >
                 {tHeader("cta")}
               </Link>

@@ -16,7 +16,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen min-h-[480px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -72,7 +72,7 @@ export function Hero() {
 
         {/* Main title */}
         <h1
-          className={`mt-3 text-[clamp(2.8rem,8vw,5.5rem)] font-bold tracking-[0.04em] text-blanc leading-[0.95] transition-all duration-700 ease-out ${
+          className={`mt-3 text-[clamp(2.2rem,8vw,5.5rem)] font-bold tracking-[0.04em] text-blanc leading-[0.95] transition-all duration-700 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
           style={{ transitionDelay: "650ms" }}
@@ -82,7 +82,7 @@ export function Hero() {
 
         {/* Subtitle */}
         <p
-          className={`mt-6 text-[clamp(1rem,2.5vw,1.25rem)] font-accent italic text-or tracking-[0.04em] transition-all duration-700 ease-out ${
+          className={`mt-6 text-[clamp(0.95rem,3vw,1.25rem)] font-accent italic text-or tracking-[0.04em] transition-all duration-700 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
           style={{ transitionDelay: "850ms" }}
@@ -99,7 +99,7 @@ export function Hero() {
         >
           <Link
             href="/expertises"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.2em] transition-all duration-500 hover:bg-blanc hover:shadow-[0_8px_40px_rgba(197,165,114,0.25)]"
+            className="group inline-flex items-center gap-3 px-6 sm:px-8 py-5 sm:py-4 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.2em] transition-all duration-500 hover:bg-blanc hover:shadow-[0_8px_40px_rgba(197,165,114,0.25)]"
           >
             <span>{t("cta")}</span>
             <span className="inline-block w-4 h-[1px] bg-noir transition-all duration-500 group-hover:w-6" />

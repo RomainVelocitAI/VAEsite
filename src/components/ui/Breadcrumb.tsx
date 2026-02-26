@@ -23,8 +23,8 @@ export function Breadcrumb({ internalPath, locale }: BreadcrumbProps) {
         aria-label={locale === "fr" ? "Fil d'Ariane" : "Breadcrumb"}
         className="bg-creme/80 border-b border-noir/5"
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <ol className="flex items-center gap-1.5 py-3 text-[13px]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-x-auto">
+          <ol className="flex items-center gap-1.5 py-3 text-[13px] sm:text-[13px] whitespace-nowrap">
             {items.map((item, i) => (
               <li key={i} className="flex items-center gap-1.5">
                 {i > 0 && (

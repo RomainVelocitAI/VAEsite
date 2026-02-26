@@ -84,7 +84,7 @@ export function KeyFigures() {
       />
 
       <Container>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
           {FIGURES.map((figure, i) => (
             <div
               key={figure.key}
@@ -95,7 +95,7 @@ export function KeyFigures() {
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <div className="text-[clamp(2.5rem,6vw,4rem)] font-bold text-or leading-none tracking-tight">
+              <div className="text-[clamp(2rem,8vw,4rem)] font-bold text-or leading-none tracking-tight">
                 {counters[i].count}
                 <span className="text-or/70">{figure.suffix}</span>
               </div>

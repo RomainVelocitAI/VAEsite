@@ -72,10 +72,10 @@ export default async function HomePage({
         <Container>
           <SectionTitle title={t("sectionTitle")} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
             {VALUE_PROPS.map((item, i) => (
               <AnimateOnScroll key={item.key} delay={i * 120} variant={i % 2 === 0 ? "fadeUp" : "scaleIn"}>
-                <div className="group text-center p-6 md:p-8 hover-lift">
+                <div className="group text-center p-4 sm:p-6 md:p-8 hover-lift">
                   <div className="inline-flex items-center justify-center w-14 h-14 border border-or/20 text-or mb-6 transition-all duration-500 group-hover:border-or group-hover:bg-or/5 group-hover:shadow-[0_0_30px_rgba(197,165,114,0.15)] group-hover:scale-110">
                     <item.Icon size={22} strokeWidth={1.2} className="transition-transform duration-500 group-hover:scale-110" />
                   </div>
@@ -97,7 +97,7 @@ export default async function HomePage({
         <Container>
           <SectionTitle title={tExpertise("sectionTitle")} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-5">
             {EXPERTISE_SECTORS.map((sector, i) => (
               <div key={sector.key} className="lg:col-span-2">
               <AnimateOnScroll delay={i * 100} variant="scaleIn">
@@ -172,7 +172,7 @@ export default async function HomePage({
         <Container className="relative z-10">
           <AnimateOnScroll variant="scaleIn">
             <div className="text-center mb-14">
-              <h2 className="text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
+              <h2 className="text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
                 {tApproach("sectionTitle")}
               </h2>
               <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />

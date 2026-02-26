@@ -154,6 +154,30 @@ body {
   to   { opacity: 1; transform: scale(1); }
 }
 
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Diagonal reduced on small screens ── */
+@media (max-width: 639px) {
+  .section-diagonal-top,
+  .section-diagonal-bottom,
+  .section-diagonal-both,
+  .section-diagonal-top-reverse,
+  .section-diagonal-both-reverse {
+    clip-path: none;
+    margin-top: 0;
+  }
+}
+
 /* ── Skip to Content ── */
 .skip-to-content {
   position: absolute;

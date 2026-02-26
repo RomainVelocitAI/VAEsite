@@ -8,7 +8,7 @@ export async function CtaBand() {
   const t = await getTranslations("ctaBand");
 
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden">
+    <section className="relative py-14 sm:py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/images/backgrounds/cta.webp"
@@ -23,7 +23,7 @@ export async function CtaBand() {
       <Container className="relative z-10">
         <AnimateOnScroll variant="scaleIn">
           <div className="text-center max-w-xl mx-auto">
-            <h2 className="text-[28px] md:text-[36px] font-bold text-blanc tracking-tight">
+            <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-bold text-blanc tracking-tight">
               {t("title")}
             </h2>
             <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />

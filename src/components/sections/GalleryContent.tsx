@@ -145,7 +145,7 @@ export function GalleryContent() {
           </button>
 
           {/* Image + Caption */}
-          <div className="relative z-10 w-full max-w-5xl mx-auto px-16 md:px-24">
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
             <div className="relative aspect-[16/10] w-full">
               <Image
                 src={GALLERY_ITEMS[lightboxIndex].src}

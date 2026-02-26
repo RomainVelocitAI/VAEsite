@@ -36,7 +36,7 @@ export function ExpertiseSectorDetail({
 
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
         {/* Image */}
         <AnimateOnScroll delay={0} variant={isReversed ? "fadeRight" : "fadeLeft"}>
           <div className={isReversed ? "lg:order-2" : ""}>
@@ -69,7 +69,7 @@ export function ExpertiseSectorDetail({
               </span>
             </div>
 
-            <h2 className="text-[26px] md:text-[32px] font-bold text-noir tracking-tight leading-tight mb-5">
+            <h2 className="text-[22px] sm:text-[26px] md:text-[32px] font-bold text-noir tracking-tight leading-tight mb-5">
               {t(`sectors.${sectorKey}.title`)}
             </h2>
 
@@ -109,7 +109,7 @@ export function ExpertiseSectorDetail({
       {/* Expanded content */}
       <div
         className={`transition-all duration-700 ease-in-out overflow-hidden ${
-          expanded ? "max-h-[800px] opacity-100 mt-10" : "max-h-0 opacity-0 mt-0"
+          expanded ? "max-h-[600px] sm:max-h-[800px] opacity-100 mt-10" : "max-h-0 opacity-0 mt-0"
         }`}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
