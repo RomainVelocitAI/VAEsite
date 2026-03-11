@@ -44,11 +44,11 @@ export default async function LegalNoticePage({
             {SECTIONS.map((section, i) => (
               <AnimateOnScroll key={section} delay={i * 80} variant="fadeUp">
                 <article>
-                  <h2 className="text-[22px] font-bold text-noir mb-4 tracking-tight">
+                  <h2 className="font-titre text-[22px] font-bold text-lie-de-vin mb-4 tracking-tight">
                     {t(`${section}.title`)}
                   </h2>
-                  <div className="h-[1px] w-8 bg-or/40 mb-4" />
-                  <div className="text-base text-texte/70 leading-relaxed whitespace-pre-line">
+                  <div className="h-[1px] w-8 bg-chamois/40 mb-4" />
+                  <div className="text-base text-taupe/70 leading-relaxed whitespace-pre-line">
                     {t(`${section}.content`)}
                   </div>
                 </article>

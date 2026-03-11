@@ -68,7 +68,7 @@ export default async function HomePage({
       <Hero />
 
       {/* Value Proposition */}
-      <section className="section-diagonal-top bg-creme py-20 md:py-28" style={{ zIndex: 2 }}>
+      <section className="section-diagonal-top bg-pierre-blanche py-20 md:py-28" style={{ zIndex: 2 }}>
         <Container>
           <SectionTitle title={t("sectionTitle")} />
 
@@ -76,13 +76,13 @@ export default async function HomePage({
             {VALUE_PROPS.map((item, i) => (
               <AnimateOnScroll key={item.key} delay={i * 120} variant={i % 2 === 0 ? "fadeUp" : "scaleIn"}>
                 <div className="group text-center p-4 sm:p-6 md:p-8 hover-lift">
-                  <div className="inline-flex items-center justify-center w-14 h-14 border border-or/20 text-or mb-6 transition-all duration-500 group-hover:border-or group-hover:bg-or/5 group-hover:shadow-[0_0_30px_rgba(197,165,114,0.15)] group-hover:scale-110">
+                  <div className="inline-flex items-center justify-center w-14 h-14 border border-chamois/20 text-chamois mb-6 transition-all duration-500 group-hover:border-chamois group-hover:bg-chamois/5 group-hover:shadow-[0_0_30px_rgba(170,125,88,0.15)] group-hover:scale-110">
                     <item.Icon size={22} strokeWidth={1.2} className="transition-transform duration-500 group-hover:scale-110" />
                   </div>
-                  <h3 className="text-[18px] font-bold text-noir mb-3 tracking-wide">
+                  <h3 className="font-sous-titre text-[18px] font-bold text-marron-pourpre mb-3 tracking-wide">
                     {t(`items.${item.key}.title`)}
                   </h3>
-                  <p className="text-base text-texte/60 leading-relaxed">
+                  <p className="text-base text-taupe/60 leading-relaxed">
                     {t(`items.${item.key}.description`)}
                   </p>
                 </div>
@@ -103,7 +103,7 @@ export default async function HomePage({
               <AnimateOnScroll delay={i * 100} variant="scaleIn">
                 <Link
                   href="/expertises"
-                  className="group block relative aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_16px_48px_rgba(0,0,0,0.25),0_0_0_2px_rgba(197,165,114,0.5)]"
+                  className="group block relative aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_16px_48px_rgba(0,0,0,0.25),0_0_0_2px_rgba(170,125,88,0.5)]"
                 >
                   <Image
                     src={sector.image}
@@ -113,13 +113,13 @@ export default async function HomePage({
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-noir/30 to-noir/10 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/80 via-marron-pourpre/30 to-marron-pourpre/10 transition-opacity duration-500" />
                   {/* Hover darkening */}
-                  <div className="absolute inset-0 bg-noir/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-marron-pourpre/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   {/* Gold border accent on hover */}
-                  <div className="absolute inset-0 border-2 border-or/0 group-hover:border-or/60 transition-all duration-500" />
+                  <div className="absolute inset-0 border-2 border-chamois/0 group-hover:border-chamois/60 transition-all duration-500" />
                   {/* Gold top accent line */}
-                  <div className="absolute top-0 left-0 w-0 h-[3px] bg-or group-hover:w-full transition-all duration-700" />
+                  <div className="absolute top-0 left-0 w-0 h-[3px] bg-chamois group-hover:w-full transition-all duration-700" />
 
                   <div className="absolute inset-0 flex flex-col justify-end p-6">
                     <h3 className="text-[18px] font-bold text-blanc tracking-wide leading-snug transition-transform duration-500 group-hover:-translate-y-2">
@@ -129,7 +129,7 @@ export default async function HomePage({
                     <p className="mt-2 text-[14px] text-blanc/70 leading-relaxed line-clamp-3 max-h-0 overflow-hidden opacity-0 group-hover:max-h-24 group-hover:opacity-100 transition-all duration-500 delay-100">
                       {tExpertise(`sectors.${sector.key}.description`)}
                     </p>
-                    <div className="mt-3 flex items-center gap-2 text-or text-[13px] font-bold uppercase tracking-[0.15em] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-150">
+                    <div className="mt-3 flex items-center gap-2 text-chamois text-[13px] font-bold uppercase tracking-[0.15em] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-150">
                       <span>Découvrir</span>
                       <ArrowRight size={12} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-1" />
                     </div>
@@ -151,7 +151,7 @@ export default async function HomePage({
       </section>
 
       {/* Key Figures */}
-      <div className="section-diagonal-both bg-noir" style={{ zIndex: 4 }}>
+      <div className="section-diagonal-both bg-marron-pourpre" style={{ zIndex: 4 }}>
         <KeyFigures />
       </div>
 
@@ -166,29 +166,29 @@ export default async function HomePage({
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-noir/75" />
+          <div className="absolute inset-0 bg-marron-pourpre/75" />
         </div>
 
         <Container className="relative z-10">
           <AnimateOnScroll variant="scaleIn">
             <div className="text-center mb-14">
-              <h2 className="text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
+              <h2 className="font-titre text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
                 {tApproach("sectionTitle")}
               </h2>
-              <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
+              <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
             </div>
           </AnimateOnScroll>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {APPROACH_PILLARS.map((pillar, i) => (
               <AnimateOnScroll key={pillar.key} delay={i * 150} variant="fadeUp">
-                <div className="group text-center p-8 border border-blanc/10 bg-blanc/[0.04] backdrop-blur-sm hover:border-or/40 hover:bg-blanc/[0.08] transition-all duration-500">
+                <div className="group text-center p-8 border border-blanc/10 bg-blanc/[0.04] backdrop-blur-sm hover:border-chamois/40 hover:bg-blanc/[0.08] transition-all duration-500">
                   <pillar.Icon
                     size={28}
                     strokeWidth={1.2}
-                    className="text-or mx-auto mb-5 transition-transform duration-500 group-hover:scale-110"
+                    className="text-chamois mx-auto mb-5 transition-transform duration-500 group-hover:scale-110"
                   />
-                  <h3 className="text-[17px] font-bold text-blanc mb-3 tracking-wide">
+                  <h3 className="font-sous-titre text-[17px] font-bold text-blanc mb-3 tracking-wide">
                     {tApproach(`pillars.${pillar.key}.title`)}
                   </h3>
                   <p className="text-[14px] text-blanc/50 leading-relaxed group-hover:text-blanc/70 transition-colors duration-500">

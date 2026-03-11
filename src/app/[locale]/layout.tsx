@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Cormorant, Barlow_Condensed, Arsenal } from "next/font/google";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -8,6 +9,30 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import "../globals.css";
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const arsenal = Arsenal({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-arsenal",
+  display: "swap",
+});
+
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["100", "400"],
+  style: ["normal", "italic"],
+  variable: "--font-barlow",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,6 +56,11 @@ export async function generateMetadata({
     },
     description,
     metadataBase: new URL(BASE_URL),
+    icons: {
+      icon: [
+        { url: "/images/favicon.svg", type: "image/svg+xml" },
+      ],
+    },
     alternates: getAlternates("/", locale),
     openGraph: getOpenGraph(locale, title, description),
     twitter: getTwitterCard(title, description),
@@ -53,7 +83,7 @@ export default async function LocaleLayout({
     "@type": "Organization",
     name: "V2A Group",
     url: BASE_URL,
-    logo: `${BASE_URL}/images/logo-v2a.png`,
+    logo: `${BASE_URL}/images/logo-v2a-original.svg`,
     image: `${BASE_URL}/images/og/open-graph.webp`,
     description:
       locale === "fr"
@@ -144,7 +174,10 @@ export default async function LocaleLayout({
   ];
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html
+      lang={locale}
+      className={`scroll-smooth ${cormorant.variable} ${arsenal.variable} ${barlowCondensed.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
@@ -168,7 +201,7 @@ export default async function LocaleLayout({
           />
         ))}
       </head>
-      <body className="bg-creme text-texte antialiased">
+      <body className="bg-pierre-blanche text-taupe antialiased">
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main-content"

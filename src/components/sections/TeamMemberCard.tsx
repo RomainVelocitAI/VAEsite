@@ -46,8 +46,8 @@ export function TeamMemberCard({
               className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir/25 via-transparent to-transparent transition-opacity duration-500" />
-            <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-or transition-all duration-700 group-hover:w-full" />
+            <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/25 via-transparent to-transparent transition-opacity duration-500" />
+            <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-chamois transition-all duration-700 group-hover:w-full" />
           </div>
         </div>
       </AnimateOnScroll>
@@ -58,23 +58,23 @@ export function TeamMemberCard({
         variant={isReversed ? "fadeLeft" : "fadeRight"}
       >
         <div className={`${isReversed ? "lg:order-1" : ""} lg:pt-4`}>
-          <h3 className="text-[26px] md:text-[30px] font-bold text-noir tracking-tight">
+          <h3 className="font-titre text-[26px] md:text-[30px] font-bold text-lie-de-vin tracking-tight">
             {t(`members.${memberKey}.name`)}
           </h3>
-          <p className="mt-1 text-[14px] font-bold uppercase tracking-[0.18em] text-or">
+          <p className="mt-1 font-sous-titre text-[14px] font-bold uppercase tracking-[0.18em] text-chamois">
             {t(`members.${memberKey}.title`)}
           </p>
 
           {/* Bio with expand/collapse */}
           <div className="mt-5">
-            <p className="text-base text-texte/70 leading-relaxed">
+            <p className="text-base text-taupe/70 leading-relaxed">
               {expanded ? bio : bioPreview}
             </p>
 
             {bio.length > previewLength && (
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.15em] text-or hover:text-[#b8984f] transition-colors duration-300 cursor-pointer"
+                className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.15em] text-chamois hover:text-chamois-dark transition-colors duration-300 cursor-pointer"
               >
                 <span>{expanded ? t("seeLess") : t("seeMore")}</span>
                 <ChevronDown
@@ -96,11 +96,11 @@ export function TeamMemberCard({
                 : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
-            <div className="h-[1px] w-8 bg-or/30 mb-4" />
+            <div className="h-[1px] w-8 bg-chamois/30 mb-4" />
             {expertiseList.map((item: string, i: number) => (
               <div key={i} className="flex items-start gap-2.5">
-                <span className="mt-2 w-1.5 h-1.5 bg-or rounded-full shrink-0" />
-                <span className="text-[15px] text-texte/60 leading-relaxed">
+                <span className="mt-2 w-1.5 h-1.5 bg-chamois rounded-full shrink-0" />
+                <span className="text-[15px] text-taupe/60 leading-relaxed">
                   {item}
                 </span>
               </div>

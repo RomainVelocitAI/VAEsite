@@ -68,7 +68,7 @@ export function KeyFigures() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-noir py-20 md:py-28 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-marron-pourpre py-20 md:py-28 overflow-hidden">
       {/* Subtle diagonal texture */}
       <div
         className="absolute inset-0 opacity-[0.015]"
@@ -77,8 +77,8 @@ export function KeyFigures() {
             45deg,
             transparent,
             transparent 40px,
-            rgba(197,165,114,1) 40px,
-            rgba(197,165,114,1) 41px
+            rgba(170,125,88,1) 40px,
+            rgba(170,125,88,1) 41px
           )`,
         }}
       />
@@ -95,12 +95,12 @@ export function KeyFigures() {
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <div className="text-[clamp(2rem,8vw,4rem)] font-bold text-or leading-none tracking-tight">
+              <div className="text-[clamp(2rem,8vw,4rem)] font-bold text-chamois leading-none tracking-tight">
                 {counters[i].count}
-                <span className="text-or/70">{figure.suffix}</span>
+                <span className="text-chamois/70">{figure.suffix}</span>
               </div>
-              <div className="mt-3 w-6 h-[1px] bg-or/30 mx-auto" />
-              <p className="mt-3 text-[14px] md:text-[15px] font-bold uppercase tracking-[0.15em] text-blanc/50">
+              <div className="mt-3 w-6 h-[1px] bg-chamois/30 mx-auto" />
+              <p className="mt-3 font-sous-titre text-[14px] md:text-[15px] font-bold uppercase tracking-[0.15em] text-blanc/50">
                 {t(figure.label)}
               </p>
             </div>

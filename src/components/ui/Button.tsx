@@ -12,11 +12,11 @@ interface ButtonProps {
 
 const variants = {
   primary:
-    "bg-or text-noir hover:bg-[#b8984f] hover:shadow-[0_4px_20px_rgba(197,165,114,0.3)]",
+    "bg-chamois text-marron-pourpre hover:bg-chamois-dark hover:shadow-[0_4px_20px_rgba(170,125,88,0.3)]",
   secondary:
-    "border border-noir text-noir hover:bg-noir hover:text-blanc",
+    "border border-marron-pourpre text-marron-pourpre hover:bg-marron-pourpre hover:text-blanc",
   ghost:
-    "text-texte/70 hover:text-noir underline underline-offset-4 decoration-texte/20 hover:decoration-noir",
+    "text-taupe/70 hover:text-marron-pourpre underline underline-offset-4 decoration-taupe/20 hover:decoration-marron-pourpre",
 };
 
 export function Button({

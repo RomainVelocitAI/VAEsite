@@ -32,8 +32,8 @@ export function Hero() {
       </div>
 
       {/* Layered overlays for depth */}
-      <div className="absolute inset-0 bg-noir/55" />
-      <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-noir/10 to-noir/30" />
+      <div className="absolute inset-0 bg-marron-pourpre/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/80 via-marron-pourpre/10 to-marron-pourpre/30" />
 
       {/* Subtle grain texture */}
       <div
@@ -47,7 +47,7 @@ export function Hero() {
       <div className="relative z-10 text-center px-5 max-w-3xl mx-auto">
         {/* Decorative line above */}
         <div
-          className={`mx-auto w-[1px] bg-or/60 mb-10 transition-all duration-1000 ease-out ${
+          className={`mx-auto w-[1px] bg-chamois/60 mb-10 transition-all duration-1000 ease-out ${
             isLoaded ? "h-16 opacity-100" : "h-0 opacity-0"
           }`}
           style={{ transitionDelay: "300ms" }}
@@ -61,7 +61,7 @@ export function Hero() {
           style={{ transitionDelay: "500ms" }}
         >
           <Image
-            src="/images/logo-v2a-icon-white.png"
+            src="/images/logo-v2a-icon-light.svg"
             alt="V2A"
             width={823}
             height={311}
@@ -72,7 +72,7 @@ export function Hero() {
 
         {/* Main title */}
         <h1
-          className={`mt-3 text-[clamp(2.2rem,8vw,5.5rem)] font-bold tracking-[0.04em] text-blanc leading-[0.95] transition-all duration-700 ease-out ${
+          className={`mt-3 font-titre text-[clamp(2.2rem,8vw,5.5rem)] font-bold tracking-[0.04em] text-blanc leading-[0.95] transition-all duration-700 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
           style={{ transitionDelay: "650ms" }}
@@ -82,7 +82,7 @@ export function Hero() {
 
         {/* Subtitle */}
         <p
-          className={`mt-6 text-[clamp(0.95rem,3vw,1.25rem)] font-accent italic text-or tracking-[0.04em] transition-all duration-700 ease-out ${
+          className={`mt-6 text-[clamp(0.95rem,3vw,1.25rem)] font-accent italic text-chamois tracking-[0.04em] transition-all duration-700 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
           style={{ transitionDelay: "850ms" }}
@@ -99,10 +99,10 @@ export function Hero() {
         >
           <Link
             href="/expertises"
-            className="group inline-flex items-center gap-3 px-6 sm:px-8 py-5 sm:py-4 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.2em] transition-all duration-500 hover:bg-blanc hover:shadow-[0_8px_40px_rgba(197,165,114,0.25)]"
+            className="group inline-flex items-center gap-3 px-6 sm:px-8 py-5 sm:py-4 bg-chamois text-marron-pourpre text-[14px] font-bold uppercase tracking-[0.2em] transition-all duration-500 hover:bg-blanc hover:shadow-[0_8px_40px_rgba(170,125,88,0.25)]"
           >
             <span>{t("cta")}</span>
-            <span className="inline-block w-4 h-[1px] bg-noir transition-all duration-500 group-hover:w-6" />
+            <span className="inline-block w-4 h-[1px] bg-marron-pourpre transition-all duration-500 group-hover:w-6" />
           </Link>
         </div>
       </div>
@@ -129,7 +129,7 @@ export function Hero() {
         }`}
         style={{ transitionDelay: "1200ms" }}
       >
-        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-or/30 to-transparent" />
+        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-chamois/30 to-transparent" />
       </div>
       <div
         className={`absolute right-8 top-1/2 -translate-y-1/2 hidden xl:block transition-all duration-1000 ${
@@ -137,7 +137,7 @@ export function Hero() {
         }`}
         style={{ transitionDelay: "1200ms" }}
       >
-        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-or/30 to-transparent" />
+        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-chamois/30 to-transparent" />
       </div>
     </section>
   );

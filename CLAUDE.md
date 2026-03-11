@@ -28,40 +28,46 @@ Le site présente UNIQUEMENT le Groupe V2A en tant qu'entité opérationnelle de
 
 ---
 
-## Charte graphique
+## Charte graphique — "Elegant Neutral"
 
 ### Palette de couleurs
 | Token Tailwind       | Hex       | Usage                                                       |
 |----------------------|-----------|-------------------------------------------------------------|
-| `noir`               | `#000000` | Titres, texte principal, header, footer, éléments structurants |
-| `or` (or-signature)  | `#C5A572` | Accents, CTA, liens hover, icônes, filets décoratifs, éléments premium |
-| `creme`              | `#FAF9F6` | Fond principal du site, sections alternées, cartes          |
+| `marron-pourpre`     | `#35181E` | Fond sombre, header/footer, dark sections, éléments structurants |
+| `chamois`            | `#AA7D58` | Accents, CTA, liens hover, icônes, filets décoratifs, éléments premium |
+| `chamois-dark`       | `#916A4A` | Hover states sur boutons chamois                             |
+| `pierre-blanche`     | `#EFE8E4` | Fond principal du site, sections alternées                   |
 | `blanc`              | `#FFFFFF` | Fond de sections de contraste, cartes, espaces de respiration |
-| `texte`              | `#333333` | Corps de texte                                              |
+| `taupe`              | `#5E4F45` | Corps de texte                                              |
+| `grege`              | `#CCBCB4` | Bordures, fonds secondaires, séparateurs                    |
+| `lie-de-vin`         | `#8E132A` | Titres H1/H2 sur fond clair                                |
 
-### Typographie
-| Rôle             | Police                      | Usage                                         |
-|------------------|-----------------------------|-----------------------------------------------|
-| Principale       | Arial Bold / Helvetica Bold | H1, H2, navigation, boutons CTA               |
-| Corps de texte   | Arial Regular               | Texte, H3, descriptions, formulaire           |
-| Accent           | Georgia Italic              | Slogan, citations, éléments d'accentuation    |
+Classe CSS utilitaire : `.bg-marron-metallise` — dégradé bronze/cuivre pour éléments décoratifs premium.
+
+### Typographie (Google Fonts via next/font)
+| Rôle             | Police            | Token Tailwind    | Usage                                         |
+|------------------|-------------------|-------------------|-----------------------------------------------|
+| Gros titre       | Cormorant Bold    | `font-titre`      | H1, H2                                        |
+| Sous-titre       | Arsenal SC        | `font-sous-titre` | H3, navigation, labels de catégories           |
+| Corps de texte   | Barlow Condensed  | `font-sans`       | Texte courant, descriptions, formulaire        |
+| Accent           | Georgia Italic    | `font-accent`     | Slogan, citations, éléments d'accentuation    |
 
 ### Hiérarchie typographique
-- **H1** : Arial Bold, 40-48px, `#000000`
-- **H2** : Arial Bold, 28-32px, `#000000`
-- **H3** : Arial Regular, 22-24px, `#C5A572` ou `#000000` selon contexte
-- **Corps** : Arial Regular, 16px min, `#333333`, interlignage 1.6 min
-- **Slogan/citations** : Georgia Italic, taille variable, `#C5A572`
+- **H1** : Cormorant Bold (`font-titre`), 40-48px, `#8E132A` (lie-de-vin) sur fond clair, `#FFFFFF` sur fond sombre
+- **H2** : Cormorant Bold (`font-titre`), 28-38px, `#8E132A` (lie-de-vin) sur fond clair, `#FFFFFF` sur fond sombre
+- **H3** : Arsenal SC (`font-sous-titre`), 17-24px, `#AA7D58` (chamois) ou `#FFFFFF` selon contexte
+- **Corps** : Barlow Condensed (`font-sans`), 16px min, `#5E4F45` (taupe), interlignage 1.6 min
+- **Slogan/citations** : Georgia Italic (`font-accent`), taille variable, `#AA7D58` (chamois)
 
 ### Slogan officiel
 > **Vision to Action**
 > *Connecting Capital, Creating Impact*
 
 ### Éléments graphiques
-- Icônes : line icons (trait fin), monochromatique, or `#C5A572` ou noir `#000000`
+- Icônes : line icons (trait fin), monochromatique, chamois `#AA7D58` ou marron-pourpre `#35181E`
 - Pas de stock photos génériques — visuels épurés : architecture, skylines, paysages stratégiques, textures nobles
 - Animations CSS légères : fade-in au scroll, hover discrets. Aucune animation agressive
-- Logo V2A : 3 versions (noir sur crème, or/blanc sur noir, favicon). Fourni par le client en SVG + PNG
+- Logo V2A : Logos SVG dans `public/images/` (horizontal, icon, original, favicons fond clair/sombre)
 
 ---
 
@@ -132,22 +138,22 @@ Carte Google Maps intégrée.
 ### Header (sticky)
 - Logo V2A à gauche
 - Liens de navigation centrés ou à droite
-- Bouton CTA "Contact" (fond or `#C5A572`, texte noir)
+- Bouton CTA "Contact" (fond chamois `#AA7D58`, texte marron-pourpre)
 - Effet shrink subtil au scroll
 - Mobile : hamburger menu avec animation fluide
 
 ### Footer
-- Fond noir `#000000`
-- Logo V2A version or/blanc
-- Slogan en or `#C5A572`
+- Fond marron-pourpre `#35181E`
+- Logo V2A version fond sombre
+- Slogan en chamois `#AA7D58`
 - Liens : toutes les pages
 - Coordonnées + copyright "© 2026 Groupe V2A SAS — Tous droits réservés"
 - Liens réseaux sociaux (à confirmer)
 
 ### Bandeau cookies (RGPD)
 3 options équivalentes obligatoires :
-- **Tout accepter** : bouton plein, fond or `#C5A572`, texte noir
-- **Tout refuser** : bouton contour noir, même taille
+- **Tout accepter** : bouton plein, fond chamois `#AA7D58`, texte marron-pourpre
+- **Tout refuser** : bouton contour marron-pourpre, même taille
 - **Paramétrer** : lien texte ou bouton secondaire
 
 ### Breakpoints responsive
@@ -233,10 +239,8 @@ public/
 - Commits en français
 
 ### Contenu en attente du client
-- Logo (SVG + PNG)
 - Photos équipe et projets (JPEG/PNG haute résolution)
 - Biographies complètes des cofondateurs
 - Informations mentions légales (RCS, capital social, TVA)
 - Chiffres clés définitifs
 - Liens réseaux sociaux
-- Favicon

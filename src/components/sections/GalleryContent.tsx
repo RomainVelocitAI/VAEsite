@@ -85,19 +85,19 @@ export function GalleryContent() {
                 />
 
                 {/* Always-visible caption overlay at bottom */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/80 via-noir/40 to-transparent pt-10 pb-4 px-5">
-                  <div className="w-6 h-[2px] bg-or mb-2" />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-marron-pourpre/80 via-marron-pourpre/40 to-transparent pt-10 pb-4 px-5">
+                  <div className="w-6 h-[2px] bg-chamois mb-2" />
                   <p className="text-[14px] text-blanc font-bold tracking-wide leading-snug">
                     {item.caption}
                   </p>
                 </div>
 
                 {/* Hover enhancement */}
-                <div className="absolute inset-0 bg-noir/0 group-hover:bg-noir/15 transition-all duration-500" />
+                <div className="absolute inset-0 bg-marron-pourpre/0 group-hover:bg-marron-pourpre/15 transition-all duration-500" />
 
                 {/* Corner accents on hover */}
-                <div className="absolute top-3 right-3 w-0 h-0 border-t-2 border-r-2 border-or/0 group-hover:w-10 group-hover:h-10 group-hover:border-or/60 transition-all duration-500" />
-                <div className="absolute bottom-3 left-3 w-0 h-0 border-b-2 border-l-2 border-or/0 group-hover:w-6 group-hover:h-6 group-hover:border-or/40 transition-all duration-500 delay-100" />
+                <div className="absolute top-3 right-3 w-0 h-0 border-t-2 border-r-2 border-chamois/0 group-hover:w-10 group-hover:h-10 group-hover:border-chamois/60 transition-all duration-500" />
+                <div className="absolute bottom-3 left-3 w-0 h-0 border-b-2 border-l-2 border-chamois/0 group-hover:w-6 group-hover:h-6 group-hover:border-chamois/40 transition-all duration-500 delay-100" />
               </button>
             ))}
           </div>
@@ -114,7 +114,7 @@ export function GalleryContent() {
         >
           {/* Backdrop */}
           <div
-            className="absolute inset-0 bg-noir/92 backdrop-blur-md animate-fade-in-up"
+            className="absolute inset-0 bg-marron-pourpre/92 backdrop-blur-md animate-fade-in-up"
             onClick={closeLightbox}
             style={{ animationDuration: "0.3s" }}
           />
@@ -122,7 +122,7 @@ export function GalleryContent() {
           {/* Close button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-6 right-6 z-10 w-12 h-12 flex items-center justify-center text-blanc/60 hover:text-or transition-colors duration-300 cursor-pointer"
+            className="absolute top-6 right-6 z-10 w-12 h-12 flex items-center justify-center text-blanc/60 hover:text-chamois transition-colors duration-300 cursor-pointer"
             aria-label={t("close")}
           >
             <X size={24} strokeWidth={1} />
@@ -131,14 +131,14 @@ export function GalleryContent() {
           {/* Navigation arrows */}
           <button
             onClick={goToPrev}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-blanc/40 hover:text-or transition-colors duration-300 cursor-pointer"
+            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-blanc/40 hover:text-chamois transition-colors duration-300 cursor-pointer"
             aria-label={t("previous")}
           >
             <ChevronLeft size={28} strokeWidth={1} />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-blanc/40 hover:text-or transition-colors duration-300 cursor-pointer"
+            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-blanc/40 hover:text-chamois transition-colors duration-300 cursor-pointer"
             aria-label={t("next")}
           >
             <ChevronRight size={28} strokeWidth={1} />
@@ -157,7 +157,7 @@ export function GalleryContent() {
               />
             </div>
             <div className="mt-6 text-center">
-              <div className="w-8 h-[1px] bg-or/40 mx-auto mb-3" />
+              <div className="w-8 h-[1px] bg-chamois/40 mx-auto mb-3" />
               <p className="text-[14px] text-blanc/60 tracking-wide">
                 {GALLERY_ITEMS[lightboxIndex].caption}
               </p>

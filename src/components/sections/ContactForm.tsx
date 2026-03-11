@@ -74,9 +74,9 @@ const SUBJECT_KEYS = [
 ] as const;
 
 const inputBase =
-  "w-full bg-blanc border border-noir/10 p-3.5 text-base text-texte placeholder:text-texte/30 outline-none transition-all duration-300 focus:border-or focus:shadow-[0_0_0_1px_rgba(197,165,114,0.15)]";
+  "w-full bg-blanc border border-marron-pourpre/10 p-3.5 text-base text-taupe placeholder:text-taupe/30 outline-none transition-all duration-300 focus:border-chamois focus:shadow-[0_0_0_1px_rgba(170,125,88,0.15)]";
 
-const labelBase = "block text-[13px] font-bold uppercase tracking-[0.18em] text-noir mb-2";
+const labelBase = "block text-[13px] font-bold uppercase tracking-[0.18em] text-marron-pourpre mb-2";
 
 export function ContactForm() {
   const t = useTranslations("contact");
@@ -143,13 +143,13 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-blanc border border-or/20 p-10 text-center">
-        <div className="w-12 h-12 mx-auto mb-4 border-2 border-or rounded-full flex items-center justify-center">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-or">
+      <div className="bg-blanc border border-chamois/20 p-10 text-center">
+        <div className="w-12 h-12 mx-auto mb-4 border-2 border-chamois rounded-full flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-chamois">
             <path d="M5 10l3.5 3.5L15 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <p className="text-[17px] text-texte leading-relaxed">
+        <p className="text-[17px] text-taupe leading-relaxed">
           {t("form.success")}
         </p>
       </div>
@@ -167,7 +167,7 @@ export function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="fullName" className={labelBase}>
-            {t("form.fullName")} <span className="text-or">*</span>
+            {t("form.fullName")} <span className="text-chamois">*</span>
           </label>
           <input
             id="fullName"
@@ -182,7 +182,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className={labelBase}>
-            {t("form.email")} <span className="text-or">*</span>
+            {t("form.email")} <span className="text-chamois">*</span>
           </label>
           <input
             id="email"
@@ -231,7 +231,7 @@ export function ContactForm() {
       {/* Subject */}
       <div>
         <label htmlFor="subject" className={labelBase}>
-          {t("form.subject")} <span className="text-or">*</span>
+          {t("form.subject")} <span className="text-chamois">*</span>
         </label>
         <div className="relative">
           <select
@@ -249,7 +249,7 @@ export function ContactForm() {
               </option>
             ))}
           </select>
-          <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-texte/30">
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-taupe/30">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -263,7 +263,7 @@ export function ContactForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className={labelBase}>
-          {t("form.message")} <span className="text-or">*</span>
+          {t("form.message")} <span className="text-chamois">*</span>
         </label>
         <textarea
           id="message"
@@ -283,26 +283,26 @@ export function ContactForm() {
           {t("form.attachment")}
         </label>
         {attachment ? (
-          <div className="flex items-center gap-3 p-3.5 bg-blanc border border-or/20">
-            <Paperclip size={16} strokeWidth={1.5} className="text-or shrink-0" />
-            <span className="text-[14px] text-texte/70 truncate flex-1">
+          <div className="flex items-center gap-3 p-3.5 bg-blanc border border-chamois/20">
+            <Paperclip size={16} strokeWidth={1.5} className="text-chamois shrink-0" />
+            <span className="text-[14px] text-taupe/70 truncate flex-1">
               {attachment.name}
             </span>
-            <span className="text-[12px] text-texte/40 shrink-0">
+            <span className="text-[12px] text-taupe/40 shrink-0">
               {(attachment.size / 1024 / 1024).toFixed(1)} Mo
             </span>
             <button
               type="button"
               onClick={removeAttachment}
-              className="text-texte/40 hover:text-red-500 transition-colors duration-300 cursor-pointer"
+              className="text-taupe/40 hover:text-red-500 transition-colors duration-300 cursor-pointer"
             >
               <X size={16} strokeWidth={1.5} />
             </button>
           </div>
         ) : (
-          <label className="group flex items-center gap-3 p-3.5 bg-blanc border border-dashed border-noir/15 hover:border-or/40 transition-all duration-300 cursor-pointer">
-            <Paperclip size={16} strokeWidth={1.5} className="text-or shrink-0" />
-            <span className="text-[14px] text-texte/50 group-hover:text-texte/70 transition-colors duration-300">
+          <label className="group flex items-center gap-3 p-3.5 bg-blanc border border-dashed border-marron-pourpre/15 hover:border-chamois/40 transition-all duration-300 cursor-pointer">
+            <Paperclip size={16} strokeWidth={1.5} className="text-chamois shrink-0" />
+            <span className="text-[14px] text-taupe/50 group-hover:text-taupe/70 transition-colors duration-300">
               {t("form.attachmentButton")}
             </span>
             <input
@@ -314,7 +314,7 @@ export function ContactForm() {
             />
           </label>
         )}
-        <p className="mt-1.5 text-[11px] text-texte/40 tracking-wide">
+        <p className="mt-1.5 text-[11px] text-taupe/40 tracking-wide">
           {t("form.attachmentHint")}
         </p>
         {attachmentError && (
@@ -327,14 +327,14 @@ export function ContactForm() {
         <input
           id="consent"
           type="checkbox"
-          className="mt-0.5 w-4 h-4 border border-noir/20 accent-or cursor-pointer"
+          className="mt-0.5 w-4 h-4 border border-marron-pourpre/20 accent-chamois cursor-pointer"
           {...register("consent")}
         />
-        <label htmlFor="consent" className="text-[15px] text-texte/60 leading-relaxed cursor-pointer">
+        <label htmlFor="consent" className="text-[15px] text-taupe/60 leading-relaxed cursor-pointer">
           {t("form.consent")}{" "}
           <Link
             href="/politique-de-confidentialite"
-            className="text-or hover:underline underline-offset-2"
+            className="text-chamois hover:underline underline-offset-2"
           >
             →
           </Link>
@@ -348,7 +348,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#b8984f] hover:shadow-[0_4px_20px_rgba(197,165,114,0.3)] disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-chamois text-marron-pourpre text-[14px] font-bold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-chamois-dark hover:shadow-[0_4px_20px_rgba(170,125,88,0.3)] disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
       >
         {status === "sending" ? t("form.sending") : t("form.submit")}
       </button>

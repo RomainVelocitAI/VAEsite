@@ -77,7 +77,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
-          ? "bg-blanc/95 backdrop-blur-md shadow-[0_1px_0_rgba(197,165,114,0.15)] py-3"
+          ? "bg-blanc/95 backdrop-blur-md shadow-[0_1px_0_rgba(170,125,88,0.15)] py-3"
           : "bg-blanc/80 backdrop-blur-sm py-5 md:py-6"
       }`}
     >
@@ -89,7 +89,7 @@ export function Header() {
           aria-label="V2A Group — Accueil"
         >
           <Image
-            src="/images/logo-v2a-horizontal.webp"
+            src="/images/logo-v2a-horizontal.svg"
             alt="V2A Group — Vision to Action"
             width={993}
             height={240}
@@ -106,15 +106,15 @@ export function Header() {
             <Link
               key={item.key}
               href={item.href}
-              className={`relative px-4 py-2 text-[14px] font-bold uppercase tracking-[0.12em] transition-colors duration-300 ${
+              className={`relative px-4 py-2 font-sous-titre text-[14px] font-bold uppercase tracking-[0.12em] transition-colors duration-300 ${
                 isActive(item.href)
-                  ? "text-noir"
-                  : "text-texte/70 hover:text-noir"
+                  ? "text-marron-pourpre"
+                  : "text-taupe/70 hover:text-marron-pourpre"
               }`}
             >
               {t(item.key)}
               <span
-                className={`absolute bottom-0 left-4 right-4 h-[2px] bg-or transition-all duration-500 ease-out ${
+                className={`absolute bottom-0 left-4 right-4 h-[2px] bg-chamois transition-all duration-500 ease-out ${
                   isActive(item.href)
                     ? "scale-x-100 opacity-100"
                     : "scale-x-0 opacity-0"
@@ -133,7 +133,7 @@ export function Header() {
               onClick={() => switchLocale("fr")}
               className={`relative p-1.5 rounded transition-all duration-300 ${
                 locale === "fr"
-                  ? "opacity-100 ring-1 ring-or/50"
+                  ? "opacity-100 ring-1 ring-chamois/50"
                   : "opacity-40 hover:opacity-80"
               }`}
               aria-label="Français"
@@ -146,7 +146,7 @@ export function Header() {
               onClick={() => switchLocale("en")}
               className={`relative p-1.5 rounded transition-all duration-300 ${
                 locale === "en"
-                  ? "opacity-100 ring-1 ring-or/50"
+                  ? "opacity-100 ring-1 ring-chamois/50"
                   : "opacity-40 hover:opacity-80"
               }`}
               aria-label="English"
@@ -158,7 +158,7 @@ export function Header() {
 
           <Link
             href="/contact"
-            className="hidden lg:inline-flex items-center px-6 py-2.5 bg-or text-noir text-[14px] font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-[#b8984f] hover:shadow-[0_4px_20px_rgba(197,165,114,0.3)]"
+            className="hidden lg:inline-flex items-center px-6 py-2.5 bg-chamois text-marron-pourpre text-[14px] font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-chamois-dark hover:shadow-[0_4px_20px_rgba(170,125,88,0.3)]"
           >
             {tHeader("cta")}
           </Link>
@@ -166,7 +166,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden relative w-10 h-10 flex items-center justify-center text-noir"
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center text-marron-pourpre"
             aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={isMobileMenuOpen}
           >
@@ -198,7 +198,7 @@ export function Header() {
       >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-noir/20 backdrop-blur-sm"
+          className="absolute inset-0 bg-marron-pourpre/20 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
 
@@ -215,10 +215,10 @@ export function Header() {
                   key={item.key}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`group relative py-4 text-[15px] font-bold uppercase tracking-[0.15em] transition-all duration-300 ${
+                  className={`group relative py-4 font-sous-titre text-[15px] font-bold uppercase tracking-[0.15em] transition-all duration-300 ${
                     isActive(item.href)
-                      ? "text-noir"
-                      : "text-texte/50 hover:text-noir"
+                      ? "text-marron-pourpre"
+                      : "text-taupe/50 hover:text-marron-pourpre"
                   }`}
                   style={{
                     transitionDelay: isMobileMenuOpen ? `${i * 60 + 150}ms` : "0ms",
@@ -230,8 +230,8 @@ export function Header() {
                     <span
                       className={`h-[2px] transition-all duration-300 ${
                         isActive(item.href)
-                          ? "w-6 bg-or"
-                          : "w-0 bg-or group-hover:w-4"
+                          ? "w-6 bg-chamois"
+                          : "w-0 bg-chamois group-hover:w-4"
                       }`}
                     />
                     {t(item.key)}
@@ -241,7 +241,7 @@ export function Header() {
             </nav>
 
             <div
-              className="mt-10 pt-8 border-t border-noir/5"
+              className="mt-10 pt-8 border-t border-marron-pourpre/5"
               style={{
                 transitionDelay: isMobileMenuOpen ? "500ms" : "0ms",
                 opacity: isMobileMenuOpen ? 1 : 0,
@@ -252,7 +252,7 @@ export function Header() {
               <Link
                 href="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center w-full py-5 bg-or text-noir text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#b8984f]"
+                className="inline-flex items-center justify-center w-full py-5 bg-chamois text-marron-pourpre text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-chamois-dark"
               >
                 {tHeader("cta")}
               </Link>
@@ -264,30 +264,30 @@ export function Header() {
                   onClick={() => { switchLocale("fr"); setIsMobileMenuOpen(false); }}
                   className={`flex items-center gap-2 px-3 py-2 rounded transition-all duration-300 ${
                     locale === "fr"
-                      ? "bg-noir/5 ring-1 ring-or/40"
+                      ? "bg-marron-pourpre/5 ring-1 ring-chamois/40"
                       : "opacity-50 hover:opacity-80"
                   }`}
                   aria-label="Français"
                 >
                   <FlagFR className="w-5 h-3.5" />
-                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-texte/70">FR</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-taupe/70">FR</span>
                 </button>
                 <button
                   type="button"
                   onClick={() => { switchLocale("en"); setIsMobileMenuOpen(false); }}
                   className={`flex items-center gap-2 px-3 py-2 rounded transition-all duration-300 ${
                     locale === "en"
-                      ? "bg-noir/5 ring-1 ring-or/40"
+                      ? "bg-marron-pourpre/5 ring-1 ring-chamois/40"
                       : "opacity-50 hover:opacity-80"
                   }`}
                   aria-label="English"
                 >
                   <FlagEN className="w-5 h-3.5" />
-                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-texte/70">EN</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-taupe/70">EN</span>
                 </button>
               </div>
 
-              <p className="mt-4 text-[11px] tracking-[0.1em] text-texte/30 font-normal italic font-accent">
+              <p className="mt-4 text-[11px] tracking-[0.1em] text-taupe/30 font-normal italic font-accent">
                 Connecting Capital, Creating Impact
               </p>
             </div>

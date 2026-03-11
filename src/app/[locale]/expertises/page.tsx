@@ -96,16 +96,16 @@ export default async function ExpertisesPage({
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-noir/55" />
-          <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-noir/30" />
+          <div className="absolute inset-0 bg-marron-pourpre/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/70 via-transparent to-marron-pourpre/30" />
         </div>
         <Container className="relative z-10">
           <div className="text-center">
-            <h1 className="text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
+            <h1 className="font-titre text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
               {t("pageTitle")}
             </h1>
-            <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
-            <p className="mt-4 text-[17px] md:text-lg font-accent italic text-or/70 max-w-xl mx-auto">
+            <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
+            <p className="mt-4 text-[17px] md:text-lg font-accent italic text-chamois/70 max-w-xl mx-auto">
               {t("pageSubtitle")}
             </p>
           </div>
@@ -114,7 +114,7 @@ export default async function ExpertisesPage({
 
       {/* Sectors with expandable details */}
       {SECTORS.map((sector, i) => {
-        const bgColor = i % 2 === 0 ? "bg-blanc" : "bg-creme";
+        const bgColor = i % 2 === 0 ? "bg-blanc" : "bg-pierre-blanche";
 
         return (
           <section key={sector.key} className={`${bgColor} py-16 md:py-24`}>
@@ -141,17 +141,17 @@ export default async function ExpertisesPage({
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-creme/85" />
+          <div className="absolute inset-0 bg-pierre-blanche/85" />
         </div>
 
         <Container className="relative z-10">
           <div className="text-center mb-16">
             <AnimateOnScroll variant="scaleIn">
-              <h2 className="text-[30px] md:text-[38px] font-bold text-noir tracking-tight">
+              <h2 className="font-titre text-[30px] md:text-[38px] font-bold text-lie-de-vin tracking-tight">
                 {t("process.sectionTitle")}
               </h2>
-              <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
-              <p className="mt-4 text-[17px] text-texte/60 max-w-xl mx-auto">
+              <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
+              <p className="mt-4 text-[17px] text-taupe/60 max-w-xl mx-auto">
                 {t("process.subtitle")}
               </p>
             </AnimateOnScroll>
@@ -159,25 +159,25 @@ export default async function ExpertisesPage({
 
           {/* Desktop Timeline */}
           <div className="hidden md:block relative">
-            <div className="absolute top-8 left-0 right-0 h-[1px] bg-or/30" />
+            <div className="absolute top-8 left-0 right-0 h-[1px] bg-chamois/30" />
 
             <div className="grid grid-cols-6 gap-4">
               {PROCESS_STEPS.map((step, i) => (
                 <AnimateOnScroll key={step} delay={i * 120} variant="slideUp">
                   <div className="group relative text-center pt-16">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center">
-                      <div className="w-4 h-4 rounded-full bg-creme border-2 border-or flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(197,165,114,0.3)]">
-                        <div className="w-1.5 h-1.5 rounded-full bg-or" />
+                      <div className="w-4 h-4 rounded-full bg-pierre-blanche border-2 border-chamois flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(170,125,88,0.3)]">
+                        <div className="w-1.5 h-1.5 rounded-full bg-chamois" />
                       </div>
                     </div>
 
-                    <span className="inline-block text-[11px] font-bold tracking-[0.2em] text-or/50 mb-2 transition-colors duration-300 group-hover:text-or">
+                    <span className="inline-block text-[11px] font-bold tracking-[0.2em] text-chamois/50 mb-2 transition-colors duration-300 group-hover:text-chamois">
                       0{i + 1}
                     </span>
-                    <h3 className="text-[16px] font-bold text-noir mb-2 tracking-wide">
+                    <h3 className="font-sous-titre text-[16px] font-bold text-marron-pourpre mb-2 tracking-wide">
                       {t(`process.steps.${step}.title`)}
                     </h3>
-                    <p className="text-[14px] text-texte/50 leading-relaxed transition-colors duration-300 group-hover:text-texte/70">
+                    <p className="text-[14px] text-taupe/50 leading-relaxed transition-colors duration-300 group-hover:text-taupe/70">
                       {t(`process.steps.${step}.description`)}
                     </p>
                   </div>
@@ -188,25 +188,25 @@ export default async function ExpertisesPage({
 
           {/* Mobile Timeline */}
           <div className="md:hidden relative pl-8">
-            <div className="absolute left-3 top-0 bottom-0 w-[1px] bg-or/30" />
+            <div className="absolute left-3 top-0 bottom-0 w-[1px] bg-chamois/30" />
 
             <div className="space-y-10">
               {PROCESS_STEPS.map((step, i) => (
                 <AnimateOnScroll key={step} delay={i * 80} variant="fadeRight">
                   <div className="relative">
                     <div className="absolute -left-8 top-1 w-6 h-6 flex items-center justify-center">
-                      <div className="w-3 h-3 rounded-full bg-creme border-2 border-or">
-                        <div className="w-1 h-1 rounded-full bg-or mx-auto mt-[2px]" />
+                      <div className="w-3 h-3 rounded-full bg-pierre-blanche border-2 border-chamois">
+                        <div className="w-1 h-1 rounded-full bg-chamois mx-auto mt-[2px]" />
                       </div>
                     </div>
 
-                    <span className="inline-block text-[11px] font-bold tracking-[0.2em] text-or/50 mb-1">
+                    <span className="inline-block text-[11px] font-bold tracking-[0.2em] text-chamois/50 mb-1">
                       0{i + 1}
                     </span>
-                    <h3 className="text-[17px] font-bold text-noir mb-1.5 tracking-wide">
+                    <h3 className="font-sous-titre text-[17px] font-bold text-marron-pourpre mb-1.5 tracking-wide">
                       {t(`process.steps.${step}.title`)}
                     </h3>
-                    <p className="text-[15px] text-texte/50 leading-relaxed">
+                    <p className="text-[15px] text-taupe/50 leading-relaxed">
                       {t(`process.steps.${step}.description`)}
                     </p>
                   </div>

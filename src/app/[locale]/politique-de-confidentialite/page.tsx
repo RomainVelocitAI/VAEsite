@@ -55,7 +55,7 @@ export default async function PrivacyPolicyPage({
           <div className="max-w-3xl mx-auto">
             {/* Last updated */}
             <AnimateOnScroll variant="fadeUp">
-              <p className="text-[13px] text-texte/40 uppercase tracking-[0.1em] mb-12">
+              <p className="text-[13px] text-taupe/40 uppercase tracking-[0.1em] mb-12">
                 {t("lastUpdated")}
               </p>
             </AnimateOnScroll>
@@ -64,11 +64,11 @@ export default async function PrivacyPolicyPage({
               {SECTIONS.map((section, i) => (
                 <AnimateOnScroll key={section} delay={i * 80} variant="fadeUp">
                   <article>
-                    <h2 className="text-[22px] font-bold text-noir mb-4 tracking-tight">
+                    <h2 className="font-titre text-[22px] font-bold text-lie-de-vin mb-4 tracking-tight">
                       {t(`sections.${section}.title`)}
                     </h2>
-                    <div className="h-[1px] w-8 bg-or/40 mb-4" />
-                    <div className="text-base text-texte/70 leading-relaxed whitespace-pre-line">
+                    <div className="h-[1px] w-8 bg-chamois/40 mb-4" />
+                    <div className="text-base text-taupe/70 leading-relaxed whitespace-pre-line">
                       {t(`sections.${section}.content`)}
                     </div>
                   </article>

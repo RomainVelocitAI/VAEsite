@@ -48,33 +48,33 @@ export default async function ContactPage({
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-noir/55" />
-          <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-noir/30" />
+          <div className="absolute inset-0 bg-marron-pourpre/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/70 via-transparent to-marron-pourpre/30" />
         </div>
         <Container className="relative z-10">
           <div className="text-center">
-            <h1 className="text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
+            <h1 className="font-titre text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
               {t("pageTitle")}
             </h1>
-            <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
-            <p className="mt-4 text-[17px] md:text-lg font-accent italic text-or/70 max-w-xl mx-auto">
+            <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
+            <p className="mt-4 text-[17px] md:text-lg font-accent italic text-chamois/70 max-w-xl mx-auto">
               {t("pageSubtitle")}
             </p>
           </div>
         </Container>
       </section>
 
-      <section className="section-diagonal-top bg-creme py-20 md:py-28">
+      <section className="section-diagonal-top bg-pierre-blanche py-20 md:py-28">
         <Container>
           <div className="max-w-2xl mx-auto">
             <AnimateOnScroll variant="fadeUp">
               {/* Email contact */}
               <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-3">
-                  <Mail size={18} strokeWidth={1.2} className="text-or" />
+                  <Mail size={18} strokeWidth={1.2} className="text-chamois" />
                   <a
                     href="mailto:contact@v2agroup.com"
-                    className="text-base text-texte/70 hover:text-or transition-colors duration-300"
+                    className="text-base text-taupe/70 hover:text-chamois transition-colors duration-300"
                   >
                     {t("info.email")}
                   </a>

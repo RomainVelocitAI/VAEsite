@@ -21,7 +21,7 @@ export function Breadcrumb({ internalPath, locale }: BreadcrumbProps) {
       />
       <nav
         aria-label={locale === "fr" ? "Fil d'Ariane" : "Breadcrumb"}
-        className="bg-creme/80 border-b border-noir/5"
+        className="bg-pierre-blanche/80 border-b border-marron-pourpre/5"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-x-auto">
           <ol className="flex items-center gap-1.5 py-3 text-[13px] sm:text-[13px] whitespace-nowrap">
@@ -31,19 +31,19 @@ export function Breadcrumb({ internalPath, locale }: BreadcrumbProps) {
                   <ChevronRight
                     size={12}
                     strokeWidth={1.5}
-                    className="text-texte/30"
+                    className="text-taupe/30"
                     aria-hidden="true"
                   />
                 )}
                 {item.href ? (
                   <Link
                     href={"/" as "/"}
-                    className="text-texte/50 hover:text-or transition-colors duration-300"
+                    className="text-taupe/50 hover:text-chamois transition-colors duration-300"
                   >
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="text-noir font-medium" aria-current="page">
+                  <span className="text-marron-pourpre font-medium" aria-current="page">
                     {item.label}
                   </span>
                 )}

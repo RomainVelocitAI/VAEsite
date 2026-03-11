@@ -57,30 +57,30 @@ export default async function AboutPage({
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-noir/55" />
-          <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-noir/30" />
+          <div className="absolute inset-0 bg-marron-pourpre/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-marron-pourpre/70 via-transparent to-marron-pourpre/30" />
         </div>
         <Container className="relative z-10">
           <div className="text-center">
-            <h1 className="text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
+            <h1 className="font-titre text-[clamp(1.8rem,6vw,3.5rem)] font-bold text-blanc tracking-tight">
               {t("vision.sectionTitle")}
             </h1>
-            <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
+            <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
           </div>
         </Container>
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-diagonal-top bg-creme py-20 md:py-28">
+      <section className="section-diagonal-top bg-pierre-blanche py-20 md:py-28">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-start">
             <AnimateOnScroll variant="fadeLeft">
               <div>
-                <p className="text-base md:text-lg text-texte leading-relaxed mb-8">
+                <p className="text-base md:text-lg text-taupe leading-relaxed mb-8">
                   {t("vision.text")}
                 </p>
-                <div className="relative pl-6 border-l-2 border-or">
-                  <p className="text-[17px] md:text-[19px] font-accent italic text-texte/80 leading-relaxed">
+                <div className="relative pl-6 border-l-2 border-chamois">
+                  <p className="text-[17px] md:text-[19px] font-accent italic text-taupe/80 leading-relaxed">
                     {t("vision.mission")}
                   </p>
                 </div>
@@ -90,16 +90,16 @@ export default async function AboutPage({
             <AnimateOnScroll delay={200} variant="fadeRight">
               <div className="relative">
                 <div className="aspect-[4/3] relative">
-                  <div className="absolute inset-4 border border-or/20" />
-                  <div className="absolute top-0 left-0 w-2/3 h-full bg-noir/[0.03]" />
-                  <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-or/30" />
-                  <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-or/30" />
+                  <div className="absolute inset-4 border border-chamois/20" />
+                  <div className="absolute top-0 left-0 w-2/3 h-full bg-marron-pourpre/[0.03]" />
+                  <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-chamois/30" />
+                  <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-chamois/30" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <span className="block text-5xl md:text-6xl font-bold text-or/15 tracking-[0.1em]">
+                      <span className="block text-5xl md:text-6xl font-bold text-chamois/15 tracking-[0.1em]">
                         V2A
                       </span>
-                      <span className="block mt-2 text-[10px] tracking-[0.4em] uppercase text-or/30 font-bold">
+                      <span className="block mt-2 text-[10px] tracking-[0.4em] uppercase text-chamois/30 font-bold">
                         Vision to Action
                       </span>
                     </div>
@@ -139,16 +139,16 @@ export default async function AboutPage({
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-noir/70" />
+          <div className="absolute inset-0 bg-marron-pourpre/70" />
         </div>
 
         <Container className="relative z-10">
           <AnimateOnScroll variant="scaleIn">
             <div className="text-center mb-14">
-              <h2 className="text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
+              <h2 className="font-titre text-[26px] sm:text-[30px] md:text-[38px] font-bold text-blanc tracking-tight">
                 {t("values.sectionTitle")}
               </h2>
-              <div className="mt-4 h-[2px] w-12 bg-or mx-auto" />
+              <div className="mt-4 h-[2px] w-12 bg-chamois mx-auto" />
             </div>
           </AnimateOnScroll>
 
