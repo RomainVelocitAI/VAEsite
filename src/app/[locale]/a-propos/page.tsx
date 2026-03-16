@@ -94,15 +94,14 @@ export default async function AboutPage({
                   <div className="absolute top-0 left-0 w-2/3 h-full bg-marron-pourpre/[0.03]" />
                   <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-chamois/30" />
                   <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-chamois/30" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <span className="block text-5xl md:text-6xl font-bold text-chamois/15 tracking-[0.1em]">
-                        V2A
-                      </span>
-                      <span className="block mt-2 text-[10px] tracking-[0.4em] uppercase text-chamois/30 font-bold">
-                        Vision to Action
-                      </span>
-                    </div>
+                  <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12">
+                    <Image
+                      src="/images/logo-v2a-original.svg"
+                      alt="V2A Group"
+                      width={300}
+                      height={200}
+                      className="w-3/4 max-w-[280px] h-auto opacity-20"
+                    />
                   </div>
                 </div>
               </div>

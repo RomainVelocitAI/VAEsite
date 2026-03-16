@@ -127,7 +127,7 @@ export function Header() {
         {/* Desktop CTA + Language Switcher + Mobile Toggle */}
         <div className="flex items-center gap-3">
           {/* Language Switcher */}
-          <div className="flex items-center gap-1">
+          <div className="hidden sm:flex items-center gap-1">
             <button
               type="button"
               onClick={() => switchLocale("fr")}
@@ -171,18 +171,18 @@ export function Header() {
             aria-expanded={isMobileMenuOpen}
           >
             <span
-              className={`absolute transition-all duration-300 ${
+              className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                 isMobileMenuOpen ? "rotate-0 opacity-0 scale-75" : "rotate-0 opacity-100 scale-100"
               }`}
             >
-              <Menu size={22} strokeWidth={1.5} />
+              <Menu size={24} strokeWidth={1.8} />
             </span>
             <span
-              className={`absolute transition-all duration-300 ${
+              className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                 isMobileMenuOpen ? "rotate-0 opacity-100 scale-100" : "rotate-90 opacity-0 scale-75"
               }`}
             >
-              <X size={22} strokeWidth={1.5} />
+              <X size={24} strokeWidth={1.8} />
             </span>
           </button>
         </div>

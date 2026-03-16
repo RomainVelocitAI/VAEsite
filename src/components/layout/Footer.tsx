@@ -18,8 +18,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-8">
           {/* Brand column */}
-          <div className="lg:col-span-1">
-            <div className="mb-6">
+          <div className="lg:col-span-1 text-center md:text-left">
+            <div className="mb-6 flex justify-center md:justify-start">
               <Image
                 src="/images/logo-v2a-horizontal-light.svg"
                 alt="V2A Group — Vision to Action"
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-sous-titre text-[11px] font-bold uppercase tracking-[0.2em] text-chamois mb-6">
               {t("navigation")}
             </h3>
@@ -56,7 +56,7 @@ export function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-sous-titre text-[11px] font-bold uppercase tracking-[0.2em] text-chamois mb-6">
               {t("legal")}
             </h3>
@@ -81,12 +81,12 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-sous-titre text-[11px] font-bold uppercase tracking-[0.2em] text-chamois mb-6">
               {t("contact")}
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin size={14} className="text-chamois mt-0.5 shrink-0" strokeWidth={1.5} />
                 <div className="space-y-1">
                   <span className="block text-[15px] text-blanc/50 tracking-wide">
@@ -97,7 +97,7 @@ export function Footer() {
                   </span>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Mail size={14} className="text-chamois mt-0.5 shrink-0" strokeWidth={1.5} />
                 <a
                   href="mailto:contact@v2agroup.com"
