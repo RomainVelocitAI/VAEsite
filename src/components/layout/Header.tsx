@@ -74,6 +74,7 @@ export function Header() {
   };
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
@@ -187,10 +188,11 @@ export function Header() {
           </button>
         </div>
       </div>
+    </header>
 
-      {/* Mobile Menu Overlay */}
-      <div
-        className={`fixed inset-0 top-0 z-40 lg:hidden transition-all duration-500 ${
+    {/* Mobile Menu Overlay — rendered outside <header> to avoid backdrop-filter containing block */}
+    <div
+      className={`fixed inset-0 top-0 z-[55] lg:hidden transition-all duration-500 ${
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -294,6 +296,6 @@ export function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
